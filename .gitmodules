@@ -1,3 +1,6 @@
 [submodule "o3de"]
 	path = o3de
 	url = git@github.com:o3de/o3de.git
+[submodule "Gems/o3de-extras"]
+	path = Gems/o3de-extras
+	url = git@github.com:o3de/o3de-extras.git
