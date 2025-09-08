@@ -4,6 +4,3 @@
 [submodule "Gems/o3de-ur-robots-gem"]
 	path = Gems/o3de-ur-robots-gem
 	url = git@github.com:RobotecAI/o3de-ur-robots-gem.git
-[submodule "ros2_ws/src/Universal_Robots_ROS2_Driver"]
-	path = ros2_ws/src/Universal_Robots_ROS2_Driver
-	url = git@github.com:UniversalRobots/Universal_Robots_ROS2_Driver.git
