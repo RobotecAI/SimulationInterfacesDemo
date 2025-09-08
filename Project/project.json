@@ -35,7 +35,8 @@
         "ScriptEvents",
         "SimulationInterfacesDemo",
         "StartingPointInput",
-        "TextureAtlas"
+        "TextureAtlas",
+        "URRobots"
     ],
     "engine_version": "2.4.1"
 }

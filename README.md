@@ -31,6 +31,7 @@ cd $PROJECT_PATH
 /opt/O3DE/25.05.1/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/ROS2/
 /opt/O3DE/25.05.1/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/ROS2SampleRobots/
 /opt/O3DE/25.05.1/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/LevelGeoreferencing/
+/opt/O3DE/25.05.1/scripts/o3de.sh register -gp ./Gems/o3de-ur-robots-gem/
 ```
 
 4. Build the project:
