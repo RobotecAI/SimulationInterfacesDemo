@@ -52,6 +52,7 @@
 
   <xacro:include filename="$(find ur_description)/urdf/inc/ur_transmissions.xacro" />
   <xacro:include filename="$(find ur_description)/urdf/inc/ur_common.xacro" />
+  <xacro:include filename="$(find ur_description)/urdf/finger_gripper/hand.xacro" />
 
   <xacro:macro name="ur_robot" params="
     name
@@ -267,20 +268,6 @@
         <origin xyz="0.0 0.0 ${-0.5 * wrist_3_inertia_length}" rpy="0 0 0" />
       </xacro:cylinder_inertial>
     </link>
-    <link name="${tf_prefix}gripper_link">
-      <visual>
-        <origin xyz="0 0 0" rpy="${pi/2} 0 ${-pi/2}"/>
-        <geometry>
-          <xacro:get_mesh name="gripper" type="visual"/>
-        </geometry>
-      </visual>
-      <collision>
-        <origin xyz="0 0 0" rpy="${pi/2} 0 ${-pi/2}"/>
-        <geometry>
-          <xacro:get_mesh name="gripper" type="collision"/>
-        </geometry>
-      </collision>
-    </link>
 
     <!-- base_joint fixes base_link to the environment -->
     <joint name="${tf_prefix}base_joint" type="fixed">
@@ -410,11 +397,8 @@
       <child link="${tf_prefix}tool0"/>
     </joint>
 
-    <joint name="${tf_prefix}tool0-gripper" type="fixed">
-      <origin xyz="0 0 0.10" rpy="${pi/2.0} ${pi/2.0} 0"/>
-      <parent link="${tf_prefix}tool0"/>
-      <child link="${tf_prefix}gripper_link"/>
-    </joint>
+    <!-- Attach Panda hand under tool0 -->
+    <xacro:hand connected_to="${tf_prefix}tool0" ns="${tf_prefix}panda" rpy="0 0 0" xyz="0 0 0"/>
 
   </xacro:macro>
 </robot>

@@ -11,12 +11,12 @@
     <link name="${ns}_hand">
       <visual>
         <geometry>
-          <mesh filename="package://franka_description/meshes/robot_ee/franka_hand_white/visual/hand.dae"/>
+          <mesh filename="package://ur_description/meshes/finger_gripper/visual/hand.dae"/>
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://franka_description/meshes/robot_ee/franka_hand_white/collision/hand.stl"/>
+          <mesh filename="package://ur_description/meshes/finger_gripper/collision/hand.stl"/>
         </geometry>
       </collision>
       <inertial>
@@ -28,12 +28,12 @@
     <link name="${ns}_leftfinger">
       <visual>
         <geometry>
-          <mesh filename="package://franka_description/meshes/robot_ee/franka_hand_white/visual/finger.dae"/>
+          <mesh filename="package://ur_description/meshes/finger_gripper/visual/finger.dae"/>
         </geometry>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://franka_description/meshes/robot_ee/franka_hand_white/collision/finger.stl"/>
+          <mesh filename="package://ur_description/meshes/finger_gripper/collision/finger.stl"/>
         </geometry>
       </collision>
       <inertial>
@@ -46,13 +46,13 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 ${pi}"/>
         <geometry>
-          <mesh filename="package://franka_description/meshes/robot_ee/franka_hand_white/visual/finger.dae"/>
+          <mesh filename="package://ur_description/meshes/finger_gripper/visual/finger.dae"/>
         </geometry>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 ${pi}"/>
         <geometry>
-          <mesh filename="package://franka_description/meshes/robot_ee/franka_hand_white/collision/finger.stl"/>
+          <mesh filename="package://ur_description/meshes/finger_gripper/collision/finger.stl"/>
         </geometry>
       </collision>
       <inertial>
