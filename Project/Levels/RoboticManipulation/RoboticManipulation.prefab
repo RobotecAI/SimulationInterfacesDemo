@@ -22,7 +22,7 @@
                     "Entity_[3876413040103]",
                     "Entity_[440535597152]",
                     "Entity_[513550041184]",
-                    "Instance_[12517228203983]/ContainerEntity"
+                    "Instance_[392559067650]/ContainerEntity"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -2691,7 +2691,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{CC9B0778-CEA4-51C5-B037-4FB37FB14BF6}"
-                                            }
+                                            },
+                                            "assetHint": "assets/boxtoypuzzle/toybox_mcube_pazzle.azmaterial"
                                         }
                                     }
                                 }
@@ -5356,7 +5357,7 @@
                 "EditorLookAtComponent": {
                     "$type": "EditorLookAtComponent",
                     "Id": 4050310940192040969,
-                    "Target": "Instance_[12517228203983]/Entity_[10700457037775]",
+                    "Target": "",
                     "ForwardAxis": 2
                 },
                 "EditorOnlyEntityComponent": {
@@ -5401,9 +5402,39 @@
         }
     },
     "Instances": {
-        "Instance_[12517228203983]": {
-            "Source": "PandaRobot/PandaRobot.prefab",
+        "Instance_[392559067650]": {
+            "Source": "Prefabs/ur10-with-fingers.prefab",
             "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[3068830877231]/Components/EditorArticulationLinkComponent/ArticulationConfiguration/Local Position/0",
+                    "value": 1.5927098989486694
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[3068830877231]/Components/EditorArticulationLinkComponent/ArticulationConfiguration/Local Position/1",
+                    "value": 2.6582443714141846
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[3068830877231]/Components/EditorArticulationLinkComponent/ArticulationConfiguration/Local Position/2",
+                    "value": -0.7025851011276245
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[3068830877231]/Components/EditorArticulationLinkComponent/ArticulationConfiguration/Local Rotation/0",
+                    "value": 0.0
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[3068830877231]/Components/EditorArticulationLinkComponent/ArticulationConfiguration/Local Rotation/1",
+                    "value": 0.0
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[3068830877231]/Components/EditorArticulationLinkComponent/ArticulationConfiguration/Local Rotation/2",
+                    "value": 0.0
+                },
                 {
                     "op": "replace",
                     "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
@@ -5417,7 +5448,7 @@
                 {
                     "op": "replace",
                     "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
-                    "value": 2.658244371414185
+                    "value": 2.6582443714141846
                 },
                 {
                     "op": "replace",
