@@ -1,0 +1,41 @@
+{
+    "project_name": "SimulationInterfacesDemo",
+    "version": "1.0.0",
+    "project_id": "{BA9FC530-651E-4B9B-9113-5E497CC0089B}",
+    "origin": "Open 3D Engine Extras: SimulationInterfacesDemo",
+    "license": "What license SimulationInterfacesDemo uses goes here: i.e. https://opensource.org/licenses/Apache-2.0 Or https://opensource.org/licenses/MIT etc.",
+    "display_name": "SimulationInterfacesDemo",
+    "summary": "A short description of SimulationInterfacesDemo.",
+    "canonical_tags": [
+        "Project"
+    ],
+    "user_tags": [
+        "SimulationInterfacesDemo"
+    ],
+    "icon_path": "preview.png",
+    "engine": "o3de",
+    "external_subdirectories": [
+        "Gem"
+    ],
+    "restricted": "SimulationInterfacesDemo",
+    "gem_names": [
+        "Atom",
+        "CameraFramework",
+        "DebugDraw",
+        "EditorPythonBindings",
+        "EMotionFX",
+        "ImGui",
+        "LyShine",
+        "PrimitiveAssets",
+        "PrefabBuilder",
+        "ScriptCanvasPhysics",
+        "ScriptEvents",
+        "StartingPointInput",
+        "TextureAtlas",
+        "DiffuseProbeGrid",
+        "ROS2>=3.1.0",
+        "ROS2SampleRobots",
+        "SimulationInterfacesDemo"
+    ],
+    "engine_version": "2.4.1"
+}
