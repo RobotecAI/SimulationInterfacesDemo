@@ -33,8 +33,15 @@ cd $PROJECT_PATH
 /opt/O3DE/25.05.1/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/LevelGeoreferencing/
 /opt/O3DE/25.05.1/scripts/o3de.sh register -gp ./Gems/o3de-ur-robots-gem/
 ```
+4. Build and source the `ros2_ws` workspace:
+```bash
+cd $PROJECT_PATH
+cd ros2_ws
+colcon build
+source install/setup.bash
+```
 
-4. Build the project:
+5. Build the project:
 ```shell
 cd $PROJECT_PATH
 cmake -B build/linux -G "Ninja Multi-Config" -DLY_UNITY_BUILD=ON -DLY_STRIP_DEBUG_SYMBOLS=TRUE -DLY_DISABLE_TEST_MODULES=ON
@@ -72,7 +79,15 @@ $O3DE_PATH/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/ROS2SampleRobots
 $O3DE_PATH/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/LevelGeoreferencing/
 ```
 
-5. Build the project:
+5. Build and source the `ros2_ws` workspace:
+```bash
+cd $PROJECT_PATH
+cd ros2_ws
+colcon build
+source install/setup.bash
+```
+
+6. Build the project:
 ```shell
 cd $PROJECT_PATH
 cmake -B build/linux -G "Ninja Multi-Config" -DLY_UNITY_BUILD=ON -DLY_STRIP_DEBUG_SYMBOLS=TRUE -DLY_DISABLE_TEST_MODULES=ON
