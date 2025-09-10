@@ -108,3 +108,18 @@ or from the O3DE Editor:
 ```shell
 /opt/O3DE/25.05.1/bin/Linux/profile/Default/Editor --project-path ~/devroot/projects/SimulationInterfacesDemo/Project 
 ```
+
+The following command launches MoveIt for the robot:
+```bash
+ros2 launch ur_moveit_config ur_moveit.launch.py ur_type:=ur10 launch_rviz:=true use_fake_hardware:=true use_sim_time:=true
+```
+
+## Changes in files
+Two repositories are copied to `ros2_ws` folder and modified to add a gripper to the UR robot:
+- Universal_Robots_ROS2_Description - from https://github.com/RobotecAI/ROSCon2023Demo/tree/8569a6753d05bd785ebdd6d93d053142d7646b99/ros2_ws/src/Universal_Robots_ROS2_Description
+    - To it the meshes for the gripper were added from (location - ros2_ws/src/Universal_Robots_ROS2_Description/urdf/finger_gripper)
+    - The `ros2_ws/src/Universal_Robots_ROS2_Description/urdf/ur_macro.xacro` file was modified to include the gripper
+- Universal_Robots_ROS2_Driver - from https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/tree/f06092e4f32ae1d042459cfaaae96b5c0ea1b21d
+    - To file `ros2_ws/src/Universal_Robots_ROS2_Driver/ur_moveit_config/config/controllers.yaml` the `panda_hand_controller` was added.
+    - To file `ros2_ws/src/Universal_Robots_ROS2_Driver/ur_robot_driver/launch/ur_control.launch.py` the `panda_hand_controller` was added.
+    - To file `ros2_ws/src/Universal_Robots_ROS2_Driver/ur_moveit_config/srdf/ur_macro.srdf.xacro` the `panda_hand` group was added with appropriate collision disables.
