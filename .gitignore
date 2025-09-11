@@ -2,6 +2,8 @@
 [Cc]ache/
 [Uu]ser/
 [Uu]ser_test*/
+[Ii]nstall*/
+[Ll]og*/
 _savebackup/
 CMakeUserPresets.json
 cmake-*

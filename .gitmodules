@@ -1,3 +1,6 @@
 [submodule "Gems/o3de-extras"]
 	path = Gems/o3de-extras
 	url = git@github.com:o3de/o3de-extras.git
+[submodule "Gems/o3de-ur-robots-gem"]
+	path = Gems/o3de-ur-robots-gem
+	url = git@github.com:RobotecAI/o3de-ur-robots-gem.git
