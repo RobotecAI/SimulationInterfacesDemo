@@ -25,16 +25,7 @@ cd $PROJECT_PATH
 git submodule update --init --recursive
 ```
 
-4. Register gems:
-```shell
-cd $PROJECT_PATH
-/opt/O3DE/25.05.1/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/ROS2/
-/opt/O3DE/25.05.1/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/ROS2SampleRobots/
-/opt/O3DE/25.05.1/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/LevelGeoreferencing/
-/opt/O3DE/25.05.1/scripts/o3de.sh register -gp ./Gems/o3de-ur-robots-gem/
-```
-
-5. Build and source the `ros2_ws` workspace:
+4. Build and source the `ros2_ws` workspace:
 ```bash
 cd $PROJECT_PATH
 cd ros2_ws
@@ -42,7 +33,7 @@ colcon build
 source install/setup.bash
 ```
 
-6. Build the project:
+5. Build the project:
 ```shell
 cd $PROJECT_PATH
 cmake -B build/linux -G "Ninja Multi-Config" -DLY_UNITY_BUILD=ON -DLY_STRIP_DEBUG_SYMBOLS=TRUE -DLY_DISABLE_TEST_MODULES=ON
@@ -72,16 +63,7 @@ cd $PROJECT_PATH
 git submodule update --init --recursive
 ```
 
-4. Register gems:
-```shell
-cd $PROJECT_PATH
-$O3DE_PATH/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/ROS2/
-$O3DE_PATH/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/ROS2SampleRobots/
-$O3DE_PATH/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/LevelGeoreferencing/
-$O3DE_PATH/scripts/o3de.sh register -gp ./Gems/o3de-ur-robots-gem/
-```
-
-5. Build and source the `ros2_ws` workspace:
+4. Build and source the `ros2_ws` workspace:
 ```bash
 cd $PROJECT_PATH
 cd ros2_ws
@@ -89,7 +71,7 @@ colcon build
 source install/setup.bash
 ```
 
-6. Build the project (you need to adjust the engine parameter in `project.json` file to switch from O3DE SDK to your O3DE source code):
+5. Build the project (you need to adjust the engine parameter in `project.json` file to switch from O3DE SDK to your O3DE source code):
 ```shell
 cd $PROJECT_PATH
 sed -i 's/"engine": "o3de-sdk"/"engine": "o3de"/' project.json
