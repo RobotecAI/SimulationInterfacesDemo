@@ -123,3 +123,10 @@ Two repositories are copied to `ros2_ws` folder and modified to add a gripper to
     - To file `ros2_ws/src/Universal_Robots_ROS2_Driver/ur_moveit_config/config/controllers.yaml` the `panda_hand_controller` was added.
     - To file `ros2_ws/src/Universal_Robots_ROS2_Driver/ur_robot_driver/launch/ur_control.launch.py` the `panda_hand_controller` was added.
     - To file `ros2_ws/src/Universal_Robots_ROS2_Driver/ur_moveit_config/srdf/ur_macro.srdf.xacro` the `panda_hand` group was added with appropriate collision disables.
+
+- Dingo - from https://github.com/dingo-cpr/dingo
+    - All packages except `dingo_description` were removed.
+    - The `dingo_description` package was modified to remove all references to gazebo and accessories. The files modified are:
+        - `ros2_ws/src/dingo/dingo_description/urdf/dingo-d.urdf.xacro`
+        - `ros2_ws/src/dingo/dingo_description/urdf/dingo-o.urdf.xacro`
+    - The `dingo_description` package was modified to work with ROS2 Humble

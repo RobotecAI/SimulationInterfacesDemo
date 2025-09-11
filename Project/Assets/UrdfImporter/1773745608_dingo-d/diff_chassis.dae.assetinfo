@@ -1,0 +1,51 @@
+{
+    "values": [
+        {
+            "$type": "{41DCBEAB-203C-4A05-96FA-98E1D8A96FA1} ImportGroup"
+        },
+        {
+            "$type": "{07B356B7-3635-40B5-878A-FAC4EFD5AD86} MeshGroup",
+            "name": "diff_chassis",
+            "nodeSelectionList": {
+                "selectedNodes": [
+                    "Scene",
+                    "Scene.Dingo_Top_Level_-_Diff_000",
+                    "Scene.Dingo_Top_Level_-_Diff_000.Material_001",
+                    "Scene.Dingo_Top_Level_-_Diff_000.transform",
+                    "Scene.Dingo_Top_Level_-_Diff_001",
+                    "Scene.Dingo_Top_Level_-_Diff_001.Material",
+                    "Scene.Dingo_Top_Level_-_Diff_001.transform",
+                    "Scene.Dingo_Top_Level_-_Diff_002",
+                    "Scene.Dingo_Top_Level_-_Diff_002.Material_002",
+                    "Scene.Dingo_Top_Level_-_Diff_002.transform",
+                    "Scene.Dingo_Top_Level_-_Diff_004",
+                    "Scene.Dingo_Top_Level_-_Diff_004.Material_003",
+                    "Scene.Dingo_Top_Level_-_Diff_004.transform",
+                    "Scene.Dingo_Top_Level_-_Diff_013",
+                    "Scene.Dingo_Top_Level_-_Diff_013.Material",
+                    "Scene.Dingo_Top_Level_-_Diff_013.transform",
+                    "Scene.Dingo_Top_Level_-_Diff_032",
+                    "Scene.Dingo_Top_Level_-_Diff_032.Material",
+                    "Scene.Dingo_Top_Level_-_Diff_032.transform",
+                    "Scene.Dingo_Top_Level_-_Diff_033",
+                    "Scene.Dingo_Top_Level_-_Diff_033.Material",
+                    "Scene.Dingo_Top_Level_-_Diff_033.transform",
+                    "Scene.Dingo_Top_Level_-_Diff_034",
+                    "Scene.Dingo_Top_Level_-_Diff_034.Material",
+                    "Scene.Dingo_Top_Level_-_Diff_034.transform",
+                    "Scene.Dingo_Top_Level_-_Diff_091",
+                    "Scene.Dingo_Top_Level_-_Diff_091.Material",
+                    "Scene.Dingo_Top_Level_-_Diff_091.transform"
+                ]
+            },
+            "rules": {
+                "rules": [
+                    {
+                        "$type": "UVsRule"
+                    }
+                ]
+            },
+            "id": "{C3B00939-481D-4A30-BDFE-ADDD2220766F}"
+        }
+    ]
+}
