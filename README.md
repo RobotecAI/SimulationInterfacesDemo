@@ -25,23 +25,7 @@ cd $PROJECT_PATH
 git submodule update --init --recursive
 ```
 
-3. Register gems:
-```shell
-cd $PROJECT_PATH
-/opt/O3DE/25.05.1/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/ROS2/
-/opt/O3DE/25.05.1/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/ROS2SampleRobots/
-/opt/O3DE/25.05.1/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/LevelGeoreferencing/
-/opt/O3DE/25.05.1/scripts/o3de.sh register -gp ./Gems/o3de-ur-robots-gem/
-```
-4. Build and source the `ros2_ws` workspace:
-```bash
-cd $PROJECT_PATH
-cd ros2_ws
-colcon build
-source install/setup.bash
-```
-
-5. Build the project:
+4. Build the project:
 ```shell
 cd $PROJECT_PATH
 cmake -B build/linux -G "Ninja Multi-Config" -DLY_UNITY_BUILD=ON -DLY_STRIP_DEBUG_SYMBOLS=TRUE -DLY_DISABLE_TEST_MODULES=ON
@@ -71,25 +55,10 @@ cd $PROJECT_PATH
 git submodule update --init --recursive
 ```
 
-4. Register gems:
+4. Build the project (you need to adjust the engine parameter in `project.json` file to switch from O3DE SDK to your O3DE source code):
 ```shell
 cd $PROJECT_PATH
-$O3DE_PATH/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/ROS2/
-$O3DE_PATH/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/ROS2SampleRobots/
-$O3DE_PATH/scripts/o3de.sh register -gp ./Gems/o3de-extras/Gems/LevelGeoreferencing/
-```
-
-5. Build and source the `ros2_ws` workspace:
-```bash
-cd $PROJECT_PATH
-cd ros2_ws
-colcon build
-source install/setup.bash
-```
-
-6. Build the project:
-```shell
-cd $PROJECT_PATH
+sed -i 's/"engine": "o3de-sdk"/"engine": "o3de"/' project.json
 cmake -B build/linux -G "Ninja Multi-Config" -DLY_UNITY_BUILD=ON -DLY_STRIP_DEBUG_SYMBOLS=TRUE -DLY_DISABLE_TEST_MODULES=ON
 cmake --build build/linux --config profile
 ```
@@ -109,24 +78,29 @@ or from the O3DE Editor:
 /opt/O3DE/25.05.1/bin/Linux/profile/Default/Editor --project-path ~/devroot/projects/SimulationInterfacesDemo/Project 
 ```
 
-The following command launches MoveIt for the robot:
+## Run the MoveIt demo:
+
+Build and source the `ros2_ws` workspace. Run the MoveIt launcher:
 ```bash
+cd $PROJECT_PATH/ros2_ws
+colcon build
+source install/setup.bash
 ros2 launch ur_moveit_config ur_moveit.launch.py ur_type:=ur10 launch_rviz:=true use_fake_hardware:=true use_sim_time:=true
 ```
 
-## Changes in files
-Two repositories are copied to `ros2_ws` folder and modified to add a gripper to the UR robot:
-- Universal_Robots_ROS2_Description - from https://github.com/RobotecAI/ROSCon2023Demo/tree/8569a6753d05bd785ebdd6d93d053142d7646b99/ros2_ws/src/Universal_Robots_ROS2_Description
-    - To it the meshes for the gripper were added from (location - ros2_ws/src/Universal_Robots_ROS2_Description/urdf/finger_gripper)
-    - The `ros2_ws/src/Universal_Robots_ROS2_Description/urdf/ur_macro.xacro` file was modified to include the gripper
-- Universal_Robots_ROS2_Driver - from https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/tree/f06092e4f32ae1d042459cfaaae96b5c0ea1b21d
-    - To file `ros2_ws/src/Universal_Robots_ROS2_Driver/ur_moveit_config/config/controllers.yaml` the `panda_hand_controller` was added.
-    - To file `ros2_ws/src/Universal_Robots_ROS2_Driver/ur_robot_driver/launch/ur_control.launch.py` the `panda_hand_controller` was added.
-    - To file `ros2_ws/src/Universal_Robots_ROS2_Driver/ur_moveit_config/srdf/ur_macro.srdf.xacro` the `panda_hand` group was added with appropriate collision disables.
+## ROS 2 Workspace
 
-- Dingo - from https://github.com/dingo-cpr/dingo
+The workspace is build based on existing resources with some modifications to add a gripper to the UR robot and to make it work with ROS2 Humble. In particular:
+1. [Universal_Robots_ROS2_Description](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description) fork used in [ROSCon2023Demo](https://github.com/RobotecAI/ROSCon2023Demo) repository was used as a base (commit `8569a675`). The following modifications were made to add the gripper:
+    - The gripper [assets](./ros2_ws/src/Universal_Robots_ROS2_Description/urdf/finger_gripper) were added.
+    - The [urdf/ur_macro.xacro](./ros2_ws/src/Universal_Robots_ROS2_Description/urdf/ur_macro.xacro) file was modified adding the gripper.
+2. [Universal_Robots_ROS2_Driver](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/tree/f06092e4f32ae1d042459cfaaae96b5c0ea1b21d) repository was used as a base (commit `f06092e4`). The following modifications were made to add the gripper:
+    - All packages except `ur_moveit_config` were removed.
+    - The [config/controllers.yaml](./ros2_ws/src/Universal_Robots_ROS2_Driver/ur_moveit_config/config/controllers.yaml) file was modified adding the gripper.
+    - The [srdf/ur_macro.srdf.xacro](./ros2_ws/src/Universal_Robots_ROS2_Driver/ur_moveit_config/srdf/ur_macro.srdf.xacro) file was modified including appropriate collision disables.
+3. [Dingo](https://github.com/dingo-cpr/dingo) repository was used as a base (commit `68806fd`) for the Dingo robot. The following modifications were made to make the robot usable without gazebo in ROS 2 Humble:
     - All packages except `dingo_description` were removed.
-    - The `dingo_description` package was modified to remove all references to gazebo and accessories. The files modified are:
-        - `ros2_ws/src/dingo/dingo_description/urdf/dingo-d.urdf.xacro`
-        - `ros2_ws/src/dingo/dingo_description/urdf/dingo-o.urdf.xacro`
+    - The `dingo_description` package was modified to remove all references to gazebo and accessories. The files modified are [urdf/dingo-d.urdf.xacro](./ros2_ws/src/dingo/dingo_description/urdf/dingo-d.urdf.xacro) and [urdf/dingo-o.urdf.xacro](./ros2_ws/src/dingo/dingo_description/urdf/dingo-o.urdf.xacro).
     - The `dingo_description` package was modified to work with ROS2 Humble
+
+> **Note:** the `dingo_description` package was used to import the robot into O3DE, and it was stored in the native format after the import was completed. The package is not needed anymore. It is a part of the workspace to allow tracking of changes made to the original files.

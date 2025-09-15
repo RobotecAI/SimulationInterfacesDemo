@@ -15,6 +15,10 @@
     "icon_path": "preview.png",
     "engine": "o3de-sdk",
     "external_subdirectories": [
+        "../Gems/o3de-ur-robots-gem",
+        "../Gems/o3de-extras/Gems/LevelGeoreferencing",
+        "../Gems/o3de-extras/Gems/ROS2",
+        "../Gems/o3de-extras/Gems/ROS2SampleRobots",
         "Gem"
     ],
     "restricted": "SimulationInterfacesDemo",

@@ -3,7 +3,6 @@ controller_names:
   - joint_trajectory_controller
   - panda_hand_controller
 
-
 scaled_joint_trajectory_controller:
   action_ns: follow_joint_trajectory
   type: FollowJointTrajectory
@@ -16,7 +15,6 @@ scaled_joint_trajectory_controller:
     - wrist_2_joint
     - wrist_3_joint
 
-
 joint_trajectory_controller:
   action_ns: follow_joint_trajectory
   type: FollowJointTrajectory
@@ -28,7 +26,6 @@ joint_trajectory_controller:
     - wrist_1_joint
     - wrist_2_joint
     - wrist_3_joint
-
 
 panda_hand_controller:
   action_ns: gripper_cmd
