@@ -5,7 +5,7 @@
 [Ii]nstall*/
 [Ll]og*/
 _savebackup/
-CMakeUserPresets.json
+CMakePresets.json
 cmake-*
 .idea
 .vscode
