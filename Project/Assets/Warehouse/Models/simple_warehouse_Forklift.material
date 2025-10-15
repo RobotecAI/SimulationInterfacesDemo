@@ -13,6 +13,7 @@
         "metallic.textureMap": "T_Forklift_Metallic.jpg",
         "normal.textureMap": "T_Forklift_N.jpg",
         "opacity.factor": 1.0,
+        "roughness.lowerBound": 0.38999998569488525,
         "roughness.textureMap": "T_Forklift_Roughness.jpg"
     }
 }

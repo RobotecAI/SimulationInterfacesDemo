@@ -13,6 +13,7 @@
         "metallic.textureMap": "T_WallA_02_Metallic.jpg",
         "normal.textureMap": "T_WallA_02_N.jpg",
         "opacity.factor": 1.0,
+        "roughness.lowerBound": 0.25999999046325684,
         "roughness.textureMap": "T_WallA_02_Roughness.jpg"
     }
 }

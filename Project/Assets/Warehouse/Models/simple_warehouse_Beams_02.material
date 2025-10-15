@@ -14,6 +14,6 @@
         "normal.textureMap": "T_Floor_01_N.jpg",
         "occlusion.diffuseTextureMap": "T_Floor_01_AO.jpg",
         "opacity.factor": 1.0,
-        "roughness.textureMap": "T_Floor_01_Metallic.jpg"
+        "roughness.textureMap": "T_Floor_01_Roughness.jpg"
     }
 }
