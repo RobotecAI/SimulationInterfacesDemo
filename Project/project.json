@@ -19,6 +19,8 @@
         "../Gems/o3de-extras/Gems/LevelGeoreferencing",
         "../Gems/o3de-extras/Gems/ROS2",
         "../Gems/o3de-extras/Gems/ROS2SampleRobots",
+        "../Gems/o3de-extras/Gems/SimulationInterfaces",
+        "../Gems/o3de-extras/Gems/WarehouseAssets",
         "Gem"
     ],
     "restricted": "SimulationInterfacesDemo",
@@ -33,14 +35,16 @@
         "LyShine",
         "PrefabBuilder",
         "PrimitiveAssets",
-        "ROS2==3.3.1",
+        "ROS2",
         "ROS2SampleRobots",
         "ScriptCanvasPhysics",
         "ScriptEvents",
         "SimulationInterfacesDemo",
         "StartingPointInput",
         "TextureAtlas",
-        "URRobots"
+        "SimulationInterfaces",
+        "URRobots",
+        "WarehouseAssets"
     ],
     "engine_version": "2.4.1"
 }
