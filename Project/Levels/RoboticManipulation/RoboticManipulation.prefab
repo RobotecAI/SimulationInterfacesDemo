@@ -22,8 +22,7 @@
                     "Entity_[3876413040103]",
                     "Entity_[440535597152]",
                     "Entity_[513550041184]",
-                    "Instance_[392559067650]/ContainerEntity",
-                    "Instance_[5862427560142]/ContainerEntity"
+                    "Instance_[392559067650]/ContainerEntity"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -5455,130 +5454,6 @@
                     "op": "replace",
                     "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
                     "value": 0.7025851011276245
-                }
-            ]
-        },
-        "Instance_[5862427560142]": {
-            "Source": "Assets/Importer/dingo-d.prefab",
-            "Patches": [
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[1185208174798]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[1189503142094]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[1168028305614]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[1155143403726]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[1155143403726]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[1202388043982]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[1180913207502]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[1163733338318]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[1215272945870]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[1219567913166]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[1172323272910]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[1176618240206]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[1150848436430]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[1223862880462]"
-                },
-                {
-                    "op": "add",
-                    "path": "/Entities/Entity_[1198093076686]/Components/EditorEntitySortComponent/Child Entity Order/0",
-                    "value": "Entity_[1180913207502]"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[1176618240206]/Components/EditorMaterialComponent/Controller/Configuration/materials/0/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[1176618240206]/Components/EditorMaterialComponent/Controller/Configuration/materials/1/Value/MaterialAsset/loadBehavior",
-                    "value": "QueueLoad"
-                },
-                {
-                    "op": "add",
-                    "path": "/ContainerEntity/Components/EditorDisabledCompositionComponent",
-                    "value": {
-                        "$type": "EditorDisabledCompositionComponent",
-                        "Id": 3289690405435481481,
-                        "DisabledComponents": []
-                    }
-                },
-                {
-                    "op": "add",
-                    "path": "/ContainerEntity/Components/EditorEntityIconComponent",
-                    "value": {
-                        "$type": "EditorEntityIconComponent",
-                        "Id": 17352363764476334955,
-                        "EntityIconAssetId": {
-                            "guid": "{00000000-0000-0000-0000-000000000000}",
-                            "subId": 0
-                        }
-                    }
-                },
-                {
-                    "op": "add",
-                    "path": "/ContainerEntity/Components/EditorEntitySortComponent",
-                    "value": {
-                        "$type": "EditorEntitySortComponent",
-                        "Id": 1089698069106464848,
-                        "Child Entity Order": [
-                            "Entity_[1150848436430]"
-                        ]
-                    }
-                },
-                {
-                    "op": "add",
-                    "path": "/ContainerEntity/Components/EditorInspectorComponent",
-                    "value": {
-                        "$type": "EditorInspectorComponent",
-                        "Id": 1710463162087440802,
-                        "ComponentOrderEntryArray": []
-                    }
-                },
-                {
-                    "op": "add",
-                    "path": "/ContainerEntity/Components/EditorOnlyEntityComponent",
-                    "value": {
-                        "$type": "EditorOnlyEntityComponent",
-                        "Id": 7095341637100215291,
-                        "IsEditorOnly": false
-                    }
-                },
-                {
-                    "op": "add",
-                    "path": "/ContainerEntity/Components/EditorPendingCompositionComponent",
-                    "value": {
-                        "$type": "EditorPendingCompositionComponent",
-                        "Id": 12601419033664792583,
-                        "PendingComponents": []
-                    }
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
-                    "value": "../Entity_[1146574390643]"
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
-                    "value": 0.06897735595703125
                 }
             ]
         }
