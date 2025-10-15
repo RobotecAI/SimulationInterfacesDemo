@@ -80,15 +80,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 15001525951334144169
-                },
-                "EditorFixedJointComponent": {
-                    "$type": "EditorFixedJointComponent",
-                    "Id": 8528628035517860804,
-                    "Configuration": {
-                        "Parent Entity": "Entity_[1168028305614]",
-                        "Child Entity": "Entity_[1155143403726]"
-                    }
+                    "Id": 15001525951334144169,
+                    "Child Entity Order": [
+                        "Entity_[1202388043982]"
+                    ]
                 },
                 "EditorInspectorComponent": {
                     "$type": "EditorInspectorComponent",
@@ -105,20 +100,6 @@
                 "EditorPendingCompositionComponent": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 3402130142120718511
-                },
-                "EditorRigidBodyComponent": {
-                    "$type": "EditorRigidBodyComponent",
-                    "Id": 10429615051831532654,
-                    "Configuration": {
-                        "entityId": "",
-                        "Compute Mass": false,
-                        "Compute COM": false,
-                        "Compute inertia": false
-                    },
-                    "PhysXSpecificConfiguration": {
-                        "SolverPositionIterations": 40,
-                        "SolverVelocityIterations": 10
-                    }
                 },
                 "EditorVisibilityComponent": {
                     "$type": "EditorVisibilityComponent",
@@ -247,14 +228,6 @@
                     "$type": "EditorEntitySortComponent",
                     "Id": 10572708485092762813
                 },
-                "EditorFixedJointComponent": {
-                    "$type": "EditorFixedJointComponent",
-                    "Id": 8542444412590984265,
-                    "Configuration": {
-                        "Parent Entity": "Entity_[1180913207502]",
-                        "Child Entity": "Entity_[1163733338318]"
-                    }
-                },
                 "EditorInspectorComponent": {
                     "$type": "EditorInspectorComponent",
                     "Id": 3102768208952709295
@@ -270,20 +243,6 @@
                 "EditorPendingCompositionComponent": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 7638001942163430609
-                },
-                "EditorRigidBodyComponent": {
-                    "$type": "EditorRigidBodyComponent",
-                    "Id": 10241831604044915877,
-                    "Configuration": {
-                        "entityId": "",
-                        "Compute Mass": false,
-                        "Compute COM": false,
-                        "Compute inertia": false
-                    },
-                    "PhysXSpecificConfiguration": {
-                        "SolverPositionIterations": 40,
-                        "SolverVelocityIterations": 10
-                    }
                 },
                 "EditorVisibilityComponent": {
                     "$type": "EditorVisibilityComponent",
@@ -325,15 +284,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 13492054103519810980
-                },
-                "EditorFixedJointComponent": {
-                    "$type": "EditorFixedJointComponent",
-                    "Id": 4953544714633627897,
-                    "Configuration": {
-                        "Parent Entity": "Entity_[1206683011278]",
-                        "Child Entity": "Entity_[1168028305614]"
-                    }
+                    "Id": 13492054103519810980,
+                    "Child Entity Order": [
+                        "Entity_[1155143403726]"
+                    ]
                 },
                 "EditorInspectorComponent": {
                     "$type": "EditorInspectorComponent",
@@ -350,20 +304,6 @@
                 "EditorPendingCompositionComponent": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 6187758644352325537
-                },
-                "EditorRigidBodyComponent": {
-                    "$type": "EditorRigidBodyComponent",
-                    "Id": 10039908308609153989,
-                    "Configuration": {
-                        "entityId": "",
-                        "Compute Mass": false,
-                        "Compute COM": false,
-                        "Compute inertia": false
-                    },
-                    "PhysXSpecificConfiguration": {
-                        "SolverPositionIterations": 40,
-                        "SolverVelocityIterations": 10
-                    }
                 },
                 "EditorVisibilityComponent": {
                     "$type": "EditorVisibilityComponent",
@@ -667,15 +607,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 8886037124269148797
-                },
-                "EditorFixedJointComponent": {
-                    "$type": "EditorFixedJointComponent",
-                    "Id": 12194691473855931434,
-                    "Configuration": {
-                        "Parent Entity": "Entity_[1198093076686]",
-                        "Child Entity": "Entity_[1180913207502]"
-                    }
+                    "Id": 8886037124269148797,
+                    "Child Entity Order": [
+                        "Entity_[1163733338318]"
+                    ]
                 },
                 "EditorInspectorComponent": {
                     "$type": "EditorInspectorComponent",
@@ -692,20 +627,6 @@
                 "EditorPendingCompositionComponent": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 6687239564567650848
-                },
-                "EditorRigidBodyComponent": {
-                    "$type": "EditorRigidBodyComponent",
-                    "Id": 1181407651452077640,
-                    "Configuration": {
-                        "entityId": "",
-                        "Compute Mass": false,
-                        "Compute COM": false,
-                        "Compute inertia": false
-                    },
-                    "PhysXSpecificConfiguration": {
-                        "SolverPositionIterations": 40,
-                        "SolverVelocityIterations": 10
-                    }
                 },
                 "EditorVisibilityComponent": {
                     "$type": "EditorVisibilityComponent",
@@ -1040,14 +961,6 @@
                     "$type": "EditorEntitySortComponent",
                     "Id": 8400287293911373148
                 },
-                "EditorFixedJointComponent": {
-                    "$type": "EditorFixedJointComponent",
-                    "Id": 16578746501733190332,
-                    "Configuration": {
-                        "Parent Entity": "Entity_[1206683011278]",
-                        "Child Entity": "Entity_[1193798109390]"
-                    }
-                },
                 "EditorInspectorComponent": {
                     "$type": "EditorInspectorComponent",
                     "Id": 9329267197754151976
@@ -1063,20 +976,6 @@
                 "EditorPendingCompositionComponent": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 8747514714119801449
-                },
-                "EditorRigidBodyComponent": {
-                    "$type": "EditorRigidBodyComponent",
-                    "Id": 6442776298012610818,
-                    "Configuration": {
-                        "entityId": "",
-                        "Compute Mass": false,
-                        "Compute COM": false,
-                        "Compute inertia": false
-                    },
-                    "PhysXSpecificConfiguration": {
-                        "SolverPositionIterations": 40,
-                        "SolverVelocityIterations": 10
-                    }
                 },
                 "EditorVisibilityComponent": {
                     "$type": "EditorVisibilityComponent",
@@ -1118,15 +1017,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 9962898949894427714
-                },
-                "EditorFixedJointComponent": {
-                    "$type": "EditorFixedJointComponent",
-                    "Id": 10257087131436012254,
-                    "Configuration": {
-                        "Parent Entity": "Entity_[1206683011278]",
-                        "Child Entity": "Entity_[1198093076686]"
-                    }
+                    "Id": 9962898949894427714,
+                    "Child Entity Order": [
+                        "Entity_[1180913207502]"
+                    ]
                 },
                 "EditorInspectorComponent": {
                     "$type": "EditorInspectorComponent",
@@ -1143,20 +1037,6 @@
                 "EditorPendingCompositionComponent": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 16518242182018358830
-                },
-                "EditorRigidBodyComponent": {
-                    "$type": "EditorRigidBodyComponent",
-                    "Id": 15544276126261574144,
-                    "Configuration": {
-                        "entityId": "",
-                        "Compute Mass": false,
-                        "Compute COM": false,
-                        "Compute inertia": false
-                    },
-                    "PhysXSpecificConfiguration": {
-                        "SolverPositionIterations": 40,
-                        "SolverVelocityIterations": 10
-                    }
                 },
                 "EditorVisibilityComponent": {
                     "$type": "EditorVisibilityComponent",
@@ -1200,14 +1080,6 @@
                     "$type": "EditorEntitySortComponent",
                     "Id": 1111673241538105534
                 },
-                "EditorFixedJointComponent": {
-                    "$type": "EditorFixedJointComponent",
-                    "Id": 15418937915133547951,
-                    "Configuration": {
-                        "Parent Entity": "Entity_[1155143403726]",
-                        "Child Entity": "Entity_[1202388043982]"
-                    }
-                },
                 "EditorInspectorComponent": {
                     "$type": "EditorInspectorComponent",
                     "Id": 3729221095119717845
@@ -1223,20 +1095,6 @@
                 "EditorPendingCompositionComponent": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 17384733170465565461
-                },
-                "EditorRigidBodyComponent": {
-                    "$type": "EditorRigidBodyComponent",
-                    "Id": 12543597938214540876,
-                    "Configuration": {
-                        "entityId": "",
-                        "Compute Mass": false,
-                        "Compute COM": false,
-                        "Compute inertia": false
-                    },
-                    "PhysXSpecificConfiguration": {
-                        "SolverPositionIterations": 40,
-                        "SolverVelocityIterations": 10
-                    }
                 },
                 "EditorVisibilityComponent": {
                     "$type": "EditorVisibilityComponent",
@@ -1840,10 +1698,13 @@
                                         "Entity_[1215272945870]",
                                         "Entity_[1185208174798]"
                                     ],
+                                    "WheelRadius": 0.04899999871850014,
                                     "IsSteering": true,
                                     "IsDrive": true
                                 }
-                            ]
+                            ],
+                            "Track": 0.4519999921321869,
+                            "Wheelbase": 0.0
                         }
                     }
                 },
