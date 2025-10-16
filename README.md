@@ -101,6 +101,6 @@ The workspace is build based on existing resources with some modifications to ad
 3. [Dingo](https://github.com/dingo-cpr/dingo) repository was used as a base (commit `68806fd`) for the Dingo robot. The following modifications were made to make the robot usable without gazebo in ROS 2 Humble:
     - All packages except `dingo_description` were removed.
     - The `dingo_description` package was modified to remove all references to gazebo and accessories. The files modified are [urdf/dingo-d.urdf.xacro](./ros2_ws/src/dingo/dingo_description/urdf/dingo-d.urdf.xacro) and [urdf/dingo-o.urdf.xacro](./ros2_ws/src/dingo/dingo_description/urdf/dingo-o.urdf.xacro).
-    - The `dingo_description` package was modified to work with ROS2 Humble
+    - The `dingo_description` package was modified to work with ROS 2 Humble
 
 > **Note:** the `dingo_description` package was used to import the robot into O3DE, and it was stored in the native format after the import was completed. The package is not needed anymore. It is a part of the workspace to allow tracking of changes made to the original files.
