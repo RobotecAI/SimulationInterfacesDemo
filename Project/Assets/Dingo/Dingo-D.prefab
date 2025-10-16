@@ -1,7 +1,7 @@
 {
     "ContainerEntity": {
         "Id": "ContainerEntity",
-        "Name": "dingo",
+        "Name": "Dingo-D",
         "Components": {
             "EditorDisabledCompositionComponent": {
                 "$type": "EditorDisabledCompositionComponent",
@@ -1051,10 +1051,10 @@
                         "Configuration": {
                             "ModelAsset": {
                                 "assetId": {
-                                    "guid": "{700677CB-7C34-5468-83EA-1D0E50AC0D9F}",
+                                    "guid": "{97196DC7-35DE-55D3-B842-4EFE93D37184}",
                                     "subId": 282111860
                                 },
-                                "assetHint": "assets/urdfimporter/1773745608_dingo-d/wheel.stl.azmodel"
+                                "assetHint": "assets/dingo/models/wheel.stl.azmodel"
                             }
                         }
                     }
@@ -1184,10 +1184,10 @@
                         "Configuration": {
                             "ModelAsset": {
                                 "assetId": {
-                                    "guid": "{700677CB-7C34-5468-83EA-1D0E50AC0D9F}",
+                                    "guid": "{97196DC7-35DE-55D3-B842-4EFE93D37184}",
                                     "subId": 282111860
                                 },
-                                "assetHint": "assets/urdfimporter/1773745608_dingo-d/wheel.stl.azmodel"
+                                "assetHint": "assets/dingo/models/wheel.stl.azmodel"
                             }
                         }
                     }
@@ -1453,24 +1453,31 @@
                         "PhysicsAsset": {
                             "Asset": {
                                 "assetId": {
-                                    "guid": "{34C3F6F1-7216-50D5-A6A6-B5885F5D00E3}",
+                                    "guid": "{78223EAF-CA03-521E-81C1-77C2B4655DDF}",
                                     "subId": 1948903283
                                 },
-                                "assetHint": "assets/urdfimporter/1773745608_dingo-d/diff_chassis_collision.stl.pxmesh"
+                                "assetHint": "assets/dingo/models/diff_chassis_collision.stl.pxmesh"
                             },
                             "Configuration": {
                                 "PhysicsAsset": {
                                     "assetId": {
-                                        "guid": "{34C3F6F1-7216-50D5-A6A6-B5885F5D00E3}",
+                                        "guid": "{78223EAF-CA03-521E-81C1-77C2B4655DDF}",
                                         "subId": 1948903283
                                     },
                                     "loadBehavior": "QueueLoad",
-                                    "assetHint": "assets/urdfimporter/1773745608_dingo-d/diff_chassis_collision.stl.pxmesh"
+                                    "assetHint": "assets/dingo/models/diff_chassis_collision.stl.pxmesh"
                                 },
+                                "AssetScale": [
+                                    1.0800000429153442,
+                                    1.0800000429153442,
+                                    1.0
+                                ],
                                 "UseMaterialsFromAsset": false
                             }
-                        }
-                    }
+                        },
+                        "HasNonUniformScale": true
+                    },
+                    "HasNonUniformScale": true
                 },
                 "EditorOnlyEntityComponent": {
                     "$type": "EditorOnlyEntityComponent",
@@ -2031,7 +2038,7 @@
         },
         "Entity_[776531465410]": {
             "Id": "Entity_[776531465410]",
-            "Name": "dingo",
+            "Name": "Dingo-d",
             "Components": {
                 "EditorDisabledCompositionComponent": {
                     "$type": "EditorDisabledCompositionComponent",
@@ -2086,10 +2093,10 @@
                         "Configuration": {
                             "ModelAsset": {
                                 "assetId": {
-                                    "guid": "{7E224928-F795-5693-ADF8-4FF04383C7E5}",
+                                    "guid": "{B47A89C1-05DA-518B-9415-4C43785677A8}",
                                     "subId": 272365687
                                 },
-                                "assetHint": "assets/dingo/1773745608_dingo-d/diff_chassis.dae.azmodel"
+                                "assetHint": "assets/dingo/models/diff_chassis.dae.azmodel"
                             }
                         }
                     }
@@ -2172,9 +2179,9 @@
                                     "Value": {
                                         "MaterialAsset": {
                                             "assetId": {
-                                                "guid": "{829CAC1B-9D96-5A50-A010-A0F4E596E5A8}"
+                                                "guid": "{F66D6C89-9DD8-56A4-9060-F32F4593C3CA}"
                                             },
-                                            "assetHint": "assets/dingo/1773745608_dingo-d/diff_chassis_material_001.azmaterial"
+                                            "assetHint": "assets/dingo/models/diff_chassis_material_001.azmaterial"
                                         }
                                     }
                                 },
@@ -2185,9 +2192,8 @@
                                     "Value": {
                                         "MaterialAsset": {
                                             "assetId": {
-                                                "guid": "{227D2FCD-5D27-51C5-8899-F7691411B77B}"
-                                            },
-                                            "assetHint": "assets/dingo/1773745608_dingo-d/diff_chassis_material_003.azmaterial"
+                                                "guid": "{D0BD583C-5F50-512B-B864-E95015656DF8}"
+                                            }
                                         }
                                     }
                                 },
@@ -2198,9 +2204,9 @@
                                     "Value": {
                                         "MaterialAsset": {
                                             "assetId": {
-                                                "guid": "{9F1CCA89-348B-5D3E-913F-2E780109C1A8}"
+                                                "guid": "{6510BF73-07A1-536A-94B1-DB599E75CE77}"
                                             },
-                                            "assetHint": "assets/dingo/1773745608_dingo-d/diff_chassis_material_002.azmaterial"
+                                            "assetHint": "assets/dingo/models/diff_chassis_material_002.azmaterial"
                                         }
                                     }
                                 },
@@ -2211,9 +2217,9 @@
                                     "Value": {
                                         "MaterialAsset": {
                                             "assetId": {
-                                                "guid": "{9B3CCFDC-CE60-599D-B9AD-42345E7C2363}"
+                                                "guid": "{49015DA3-CEB9-505C-9C39-3E110033C6B7}"
                                             },
-                                            "assetHint": "assets/dingo/1773745608_dingo-d/diff_chassis_material.azmaterial"
+                                            "assetHint": "assets/dingo/models/diff_chassis_material.azmaterial"
                                         }
                                     }
                                 }
