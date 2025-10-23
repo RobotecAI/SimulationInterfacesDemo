@@ -1,0 +1,18 @@
+{
+    "materialType": "@gemroot:Atom_Feature_Common@/Assets/Materials/Types/StandardPBR.materialtype",
+    "materialTypeVersion": 5,
+    "propertyValues": {
+        "baseColor.textureMap": "T_FloorStripes_D.jpg",
+        "emissive.color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "metallic.factor": 1.0,
+        "metallic.textureMap": "T_FloorStripes_Metallic.jpg",
+        "normal.textureMap": "T_FloorStripes_N.jpg",
+        "opacity.factor": 1.0,
+        "roughness.textureMap": "T_FloorStripes_Roughness.jpg"
+    }
+}

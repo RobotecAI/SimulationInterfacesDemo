@@ -1,0 +1,19 @@
+{
+    "materialType": "@gemroot:Atom_Feature_Common@/Assets/Materials/Types/StandardPBR.materialtype",
+    "materialTypeVersion": 5,
+    "propertyValues": {
+        "baseColor.textureMap": "T_WallA_02_D.jpg",
+        "emissive.color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "metallic.factor": 1.0,
+        "metallic.textureMap": "T_WallA_02_Metallic.jpg",
+        "normal.textureMap": "T_WallA_02_N.jpg",
+        "opacity.factor": 1.0,
+        "roughness.lowerBound": 0.25999999046325684,
+        "roughness.textureMap": "T_WallA_02_Roughness.jpg"
+    }
+}

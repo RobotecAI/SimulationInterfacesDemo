@@ -1,0 +1,18 @@
+{
+    "materialType": "@gemroot:Atom_Feature_Common@/Assets/Materials/Types/StandardPBR.materialtype",
+    "materialTypeVersion": 5,
+    "propertyValues": {
+        "baseColor.textureMap": "T_LampCeilingA_D.jpg",
+        "emissive.color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "metallic.factor": 1.0,
+        "metallic.textureMap": "T_LampCeilingA_Metallic.jpg",
+        "normal.textureMap": "T_LampCeilingA_N.jpg",
+        "opacity.factor": 1.0,
+        "roughness.textureMap": "T_LampCeilingA_Roughness.jpg"
+    }
+}

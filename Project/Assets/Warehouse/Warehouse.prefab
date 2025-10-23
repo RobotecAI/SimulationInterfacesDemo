@@ -1,0 +1,1508 @@
+{
+    "ContainerEntity": {
+        "Id": "ContainerEntity",
+        "Name": "Warehouse",
+        "Components": {
+            "EditorDisabledCompositionComponent": {
+                "$type": "EditorDisabledCompositionComponent",
+                "Id": 12626717990511374840
+            },
+            "EditorEntityIconComponent": {
+                "$type": "EditorEntityIconComponent",
+                "Id": 6005256398231391653
+            },
+            "EditorEntitySortComponent": {
+                "$type": "EditorEntitySortComponent",
+                "Id": 16368893641988398162,
+                "Child Entity Order": [
+                    "Entity_[20893912789674]"
+                ]
+            },
+            "EditorInspectorComponent": {
+                "$type": "EditorInspectorComponent",
+                "Id": 360977985776034078
+            },
+            "EditorLockComponent": {
+                "$type": "EditorLockComponent",
+                "Id": 10246747037175995666
+            },
+            "EditorOnlyEntityComponent": {
+                "$type": "EditorOnlyEntityComponent",
+                "Id": 1170457845103779005
+            },
+            "EditorPendingCompositionComponent": {
+                "$type": "EditorPendingCompositionComponent",
+                "Id": 9722729726375757092
+            },
+            "EditorPrefabComponent": {
+                "$type": "EditorPrefabComponent",
+                "Id": 8492755279585128124
+            },
+            "EditorVisibilityComponent": {
+                "$type": "EditorVisibilityComponent",
+                "Id": 8106171009273841142
+            },
+            "TransformComponent": {
+                "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                "Id": 3282403326941746,
+                "Parent Entity": ""
+            }
+        }
+    },
+    "Entities": {
+        "Entity_[20859553051306]": {
+            "Id": "Entity_[20859553051306]",
+            "Name": "row",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 17208845731936217197
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 12481077708346354290
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 3208292496183040836,
+                    "Child Entity Order": [
+                        "Instance_[1068343751338]/ContainerEntity",
+                        "Instance_[1051163882154]/ContainerEntity",
+                        "Instance_[1064048784042]/ContainerEntity",
+                        "Instance_[943789699754]/ContainerEntity"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 5370175392905872342
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 4961450814356377102
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 5537218895377788404
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 2102259829758027457
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 17242869299972963421
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 7045480517913077542,
+                    "Parent Entity": "Entity_[20868142985898]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0,
+                            0.0,
+                            6.163212776184082
+                        ]
+                    }
+                }
+            }
+        },
+        "Entity_[20863848018602]": {
+            "Id": "Entity_[20863848018602]",
+            "Name": "window",
+            "Components": {
+                "AZ::Render::EditorAreaLightComponent": {
+                    "$type": "AZ::Render::EditorAreaLightComponent",
+                    "Id": 572854927411403115,
+                    "Controller": {
+                        "Configuration": {
+                            "LightType": 4,
+                            "Intensity": 500.0,
+                            "AttenuationRadiusMode": 0,
+                            "AttenuationRadius": 30.0
+                        }
+                    }
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 1568648043190863634
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 16711810403730787379
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 17176176354511336366
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 14234309608318686263
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 8846602124954149373
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 3631247314286563978
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 7522638564115649913
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 3084889357508352070
+                },
+                "LmbrCentral::EditorQuadShapeComponent": {
+                    "$type": "LmbrCentral::EditorQuadShapeComponent",
+                    "Id": 6983508152377607566,
+                    "ShapeColor": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "QuadShape": {
+                        "Configuration": {
+                            "Width": 2.0,
+                            "Height": 25.0
+                        }
+                    }
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 8741540487313471593,
+                    "Parent Entity": "Entity_[20872437953194]",
+                    "Transform Data": {
+                        "Translate": [
+                            10.439628601074219,
+                            2.8526406288146973,
+                            7.484280586242676
+                        ],
+                        "Rotate": [
+                            180.0,
+                            -52.323997497558594,
+                            180.0
+                        ]
+                    }
+                }
+            }
+        },
+        "Entity_[20868142985898]": {
+            "Id": "Entity_[20868142985898]",
+            "Name": "Ceiling",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 2697936094529549429
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 10348207272844307261
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 11431257726413201713,
+                    "Child Entity Order": [
+                        "Entity_[20859553051306]",
+                        "Entity_[20885322855082]",
+                        "Entity_[20881027887786]",
+                        "Entity_[20876732920490]"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 8922862189255344417
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 16262962426106774573
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 12803971393568232396
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 6838525306577370713
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 661100501007430316
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 12064279757662084253,
+                    "Parent Entity": "Entity_[20889617822378]"
+                }
+            }
+        },
+        "Entity_[20872437953194]": {
+            "Id": "Entity_[20872437953194]",
+            "Name": "env",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 5880730330902814861
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 9653260416773795479
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 10606164319040963216,
+                    "Child Entity Order": [
+                        "Entity_[20863848018602]"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 17668359833059108747
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 14119964722229112765
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 7620972750282064445
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 901350041584159664
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 17441895024150718316
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 10717160161332314996,
+                    "Parent Entity": "Entity_[20889617822378]"
+                }
+            }
+        },
+        "Entity_[20876732920490]": {
+            "Id": "Entity_[20876732920490]",
+            "Name": "row",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 17208845731936217197
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 12481077708346354290
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 3208292496183040836,
+                    "Child Entity Order": [
+                        "Instance_[1068343751338]/ContainerEntity",
+                        "Instance_[1051163882154]/ContainerEntity",
+                        "Instance_[1064048784042]/ContainerEntity",
+                        "Instance_[943789699754]/ContainerEntity",
+                        "Instance_[1111293424298]/ContainerEntity",
+                        "Instance_[1102703489706]/ContainerEntity",
+                        "Instance_[1106998457002]/ContainerEntity",
+                        "Instance_[1115588391594]/ContainerEntity"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 5370175392905872342
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 4961450814356377102
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 5537218895377788404
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 2102259829758027457
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 17242869299972963421
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 7045480517913077542,
+                    "Parent Entity": "Entity_[20868142985898]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0,
+                            -7.593717098236084,
+                            6.163212776184082
+                        ]
+                    }
+                }
+            }
+        },
+        "Entity_[20881027887786]": {
+            "Id": "Entity_[20881027887786]",
+            "Name": "row",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 17208845731936217197
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 12481077708346354290
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 3208292496183040836,
+                    "Child Entity Order": [
+                        "Instance_[1068343751338]/ContainerEntity",
+                        "Instance_[1051163882154]/ContainerEntity",
+                        "Instance_[1064048784042]/ContainerEntity",
+                        "Instance_[943789699754]/ContainerEntity",
+                        "Instance_[1171422966442]/ContainerEntity",
+                        "Instance_[1167127999146]/ContainerEntity",
+                        "Instance_[1180012901034]/ContainerEntity",
+                        "Instance_[1175717933738]/ContainerEntity",
+                        "Instance_[1235847475882]/ContainerEntity",
+                        "Instance_[1231552508586]/ContainerEntity",
+                        "Instance_[1244437410474]/ContainerEntity",
+                        "Instance_[1240142443178]/ContainerEntity"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 5370175392905872342
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 4961450814356377102
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 5537218895377788404
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 2102259829758027457
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 17242869299972963421
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 7045480517913077542,
+                    "Parent Entity": "Entity_[20868142985898]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0,
+                            16.186683654785156,
+                            6.163212776184082
+                        ]
+                    }
+                }
+            }
+        },
+        "Entity_[20885322855082]": {
+            "Id": "Entity_[20885322855082]",
+            "Name": "row",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 17208845731936217197
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 12481077708346354290
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 3208292496183040836,
+                    "Child Entity Order": [
+                        "Instance_[1068343751338]/ContainerEntity",
+                        "Instance_[1051163882154]/ContainerEntity",
+                        "Instance_[1064048784042]/ContainerEntity",
+                        "Instance_[943789699754]/ContainerEntity",
+                        "Instance_[1171422966442]/ContainerEntity",
+                        "Instance_[1167127999146]/ContainerEntity",
+                        "Instance_[1180012901034]/ContainerEntity",
+                        "Instance_[1175717933738]/ContainerEntity"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 5370175392905872342
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 4961450814356377102
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 5537218895377788404
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 2102259829758027457
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 17242869299972963421
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 7045480517913077542,
+                    "Parent Entity": "Entity_[20868142985898]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0,
+                            7.296866416931152,
+                            6.163212776184082
+                        ]
+                    }
+                }
+            }
+        },
+        "Entity_[20889617822378]": {
+            "Id": "Entity_[20889617822378]",
+            "Name": "Lights",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 5463681497625534088
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 5441483499341141210
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 7210779220016706708,
+                    "Child Entity Order": [
+                        "Entity_[20868142985898]",
+                        "Entity_[20872437953194]"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 1168220058442677199
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 16591697711244626287
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 2727561588445713921
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 2961222109905219829
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 11686814033626179515
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 16648226444919552962,
+                    "Parent Entity": "Entity_[20893912789674]"
+                }
+            }
+        },
+        "Entity_[20893912789674]": {
+            "Id": "Entity_[20893912789674]",
+            "Name": "Warehouse",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 15629305397479275158
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 13892944966024307716
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 57988350860849274,
+                    "Child Entity Order": [
+                        "Entity_[20898207756970]",
+                        "Entity_[20889617822378]"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 338092868275285858
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 5486806505496715686
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 4635645641726926100
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 10092455855279453774
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 2058365050063645451
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 2088337839583658940,
+                    "Parent Entity": "ContainerEntity"
+                }
+            }
+        },
+        "Entity_[20898207756970]": {
+            "Id": "Entity_[20898207756970]",
+            "Name": "Visual",
+            "Components": {
+                "AZ::Render::EditorMeshComponent": {
+                    "$type": "AZ::Render::EditorMeshComponent",
+                    "Id": 9443281727647459704,
+                    "Controller": {
+                        "Configuration": {
+                            "ModelAsset": {
+                                "assetId": {
+                                    "guid": "{75154D55-6A55-5AEF-B03F-BC994BDC0D3C}",
+                                    "subId": 284476576
+                                },
+                                "assetHint": "assets/warehouse/models/simple_warehouse.gltf.azmodel"
+                            }
+                        }
+                    }
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 17739697852871495179
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 7466941496771683660
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 4597358104120523582
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 12702647138278693356
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 5303751479476022722
+                },
+                "EditorMaterialComponent": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 13952069414424006518,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": [
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 172686790
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{347E514D-E96D-56EC-85C7-68B3011A7F01}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_ceiling.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 224727037
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{C4DD400E-6431-5959-A9D3-3CE8FAFB8FC8}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_wall_details.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 403235426
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{3312142D-2717-5C7F-9FB7-DF3E0497B3D9}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_extinguisher.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 502336326
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{2BB89BB0-1A14-5E05-A26E-769793AA8C1C}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_pushcart.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 898671911
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{B7D71512-F3BE-5822-958E-D66E75D6438C}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_pallet.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 1041788204
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{3DECA9C1-63F9-55B4-9CB2-A652612D5F24}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_sign_a.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 1936883349
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{59A50F14-B767-5444-AB0C-8C20DB563552}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_cardboardboxd.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 2011009199
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{54651B08-1FA2-51B0-8964-88930831161B}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_material.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 2140645835
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{5A74D75B-C2B8-5FA6-990B-CB68EFF87FF2}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_light.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 2177033944
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{515A50AA-2EBE-5324-9BB2-572D4C8587FA}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_floor.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 2191911699
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{1F6C6DCC-9071-53F1-BB1E-FCD9ED71B290}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_walla_01.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 2240519805
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{BA539BC9-28B8-51D5-84F9-D5400E652163}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_cardboardboxc.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 2342808922
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{B9BBEB3E-0BB5-5349-AD80-360B3DEC1D28}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_rack_01.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 2642406104
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{0987B7C2-4871-5A5C-9C8F-8D70DD5AFAEB}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_ceiling_light.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 2939538215
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{A4E43DAD-CCF2-5D95-BB63-E17949B88206}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_crate_label_01.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 2950315443
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{C33E728E-D8C0-5FF1-8129-D3619575D9E6}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_floor_stripes.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 3021960028
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{3660FA3B-F780-52D9-A2FF-C79D9BF4699E}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_barrel.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 3228240987
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{0EBBE9B7-6FBE-5361-BDA2-3FF782E17483}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_framea.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 3246634997
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{C038F53C-27DC-5068-976F-C1B43805B34C}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_wall_02.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 3268155751
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{32551EC7-1942-5F10-B409-534AE831E128}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_aisle_sign.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 3471838819
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{A2F4261D-3C4A-50BA-960C-D07AD702A9BA}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_rack_04.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 3481895293
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{BAFFEA81-8BC1-5948-8583-BED08B336980}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_forklift.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 3529689408
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{8F79B47A-840A-50CD-ABA2-A3B800E6C4DA}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_rackshield.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 3585203315
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{152FF2D6-5CAB-5AC9-9E5B-AA2801710069}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_sign_c.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 3956736219
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{1FDA9913-EF26-5AC5-8B37-58FA02E71594}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_cardboardboxa.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 3971712968
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{9F55120E-AA28-5F63-97B8-FC1FF91DA265}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_sign_b.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 4094271022
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{2EA7DD4B-4539-5325-9D79-EEFE80960B49}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_rack_02.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 4097816098
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{796F0057-9180-5D84-9F50-6AF9E0FB0494}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_rack_03.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 4229925251
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{76265604-137B-572B-A5E3-68D9928E9C9F}"
+                                            },
+                                            "assetHint": "assets/warehouse/models/simple_warehouse_beams_02.azmaterial"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 1931741059723499889
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 18172913193721241409
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 13021346155652435990
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 17952971339467571458,
+                    "Parent Entity": "Entity_[20893912789674]"
+                }
+            }
+        }
+    },
+    "Instances": {
+        "Instance_[1051163882154]": {
+            "Source": "Assets/Warehouse/CeilingLamp.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[956674601642]/Components/AZ::Render::EditorAreaLightComponent/Controller/Configuration/AttenuationRadius",
+                    "value": 493.2056579589844
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[20859553051306]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": -6.73003625869751
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 0.1483963131904602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": -0.3506784439086914
+                }
+            ]
+        },
+        "Instance_[1064048784042]": {
+            "Source": "Assets/Warehouse/CeilingLamp.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[956674601642]/Components/AZ::Render::EditorAreaLightComponent/Controller/Configuration/AttenuationRadius",
+                    "value": 493.2056579589844
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[20859553051306]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": 7.647351264953613
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 0.1483963131904602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": -0.3506784439086914
+                }
+            ]
+        },
+        "Instance_[1068343751338]": {
+            "Source": "Assets/Warehouse/CeilingLamp.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[20859553051306]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": 3.121190309524536
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 0.1483963131904602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": -0.3506784439086914
+                }
+            ]
+        },
+        "Instance_[1102703489706]": {
+            "Source": "Assets/Warehouse/CeilingLamp.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[956674601642]/Components/AZ::Render::EditorAreaLightComponent/Controller/Configuration/AttenuationRadius",
+                    "value": 493.2056579589844
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[20876732920490]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": 3.121190309524536
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 0.1483963131904602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": -0.3506784439086914
+                }
+            ]
+        },
+        "Instance_[1106998457002]": {
+            "Source": "Assets/Warehouse/CeilingLamp.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[956674601642]/Components/AZ::Render::EditorAreaLightComponent/Controller/Configuration/AttenuationRadius",
+                    "value": 493.2056579589844
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[20876732920490]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": -6.73003625869751
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 0.1483963131904602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": -0.3506784439086914
+                }
+            ]
+        },
+        "Instance_[1111293424298]": {
+            "Source": "Assets/Warehouse/CeilingLamp.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[956674601642]/Components/AZ::Render::EditorAreaLightComponent/Controller/Configuration/AttenuationRadius",
+                    "value": 493.2056579589844
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[20876732920490]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": -1.921454668045044
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 0.1483963131904602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": -0.3506784439086914
+                }
+            ]
+        },
+        "Instance_[1115588391594]": {
+            "Source": "Assets/Warehouse/CeilingLamp.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[956674601642]/Components/AZ::Render::EditorAreaLightComponent/Controller/Configuration/AttenuationRadius",
+                    "value": 493.2056579589844
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[20876732920490]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": 7.647351264953613
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 0.1483963131904602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": -0.3506784439086914
+                }
+            ]
+        },
+        "Instance_[1167127999146]": {
+            "Source": "Assets/Warehouse/CeilingLamp.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[956674601642]/Components/AZ::Render::EditorAreaLightComponent/Controller/Configuration/AttenuationRadius",
+                    "value": 493.2056579589844
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[20885322855082]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": 3.121190309524536
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 0.1483963131904602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": -0.3506784439086914
+                }
+            ]
+        },
+        "Instance_[1171422966442]": {
+            "Source": "Assets/Warehouse/CeilingLamp.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[956674601642]/Components/AZ::Render::EditorAreaLightComponent/Controller/Configuration/AttenuationRadius",
+                    "value": 493.2056579589844
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[20885322855082]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": -6.73003625869751
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 0.1483963131904602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": -0.3506784439086914
+                }
+            ]
+        },
+        "Instance_[1175717933738]": {
+            "Source": "Assets/Warehouse/CeilingLamp.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[956674601642]/Components/AZ::Render::EditorAreaLightComponent/Controller/Configuration/AttenuationRadius",
+                    "value": 493.2056579589844
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[20885322855082]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": -1.921454668045044
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 0.1483963131904602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": -0.3506784439086914
+                }
+            ]
+        },
+        "Instance_[1180012901034]": {
+            "Source": "Assets/Warehouse/CeilingLamp.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[956674601642]/Components/AZ::Render::EditorAreaLightComponent/Controller/Configuration/AttenuationRadius",
+                    "value": 493.2056579589844
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[20885322855082]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": 7.647351264953613
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 0.1483963131904602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": -0.3506784439086914
+                }
+            ]
+        },
+        "Instance_[1231552508586]": {
+            "Source": "Assets/Warehouse/CeilingLamp.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[956674601642]/Components/AZ::Render::EditorAreaLightComponent/Controller/Configuration/AttenuationRadius",
+                    "value": 493.2056579589844
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[20881027887786]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": -1.921454668045044
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 0.1483963131904602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": -0.3506784439086914
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Rotate/2",
+                    "value": 90.0
+                }
+            ]
+        },
+        "Instance_[1235847475882]": {
+            "Source": "Assets/Warehouse/CeilingLamp.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[956674601642]/Components/AZ::Render::EditorAreaLightComponent/Controller/Configuration/AttenuationRadius",
+                    "value": 493.2056579589844
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[20881027887786]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": -6.73003625869751
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 0.1483963131904602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": -0.3506784439086914
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Rotate/2",
+                    "value": 90.0
+                }
+            ]
+        },
+        "Instance_[1240142443178]": {
+            "Source": "Assets/Warehouse/CeilingLamp.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[956674601642]/Components/AZ::Render::EditorAreaLightComponent/Controller/Configuration/AttenuationRadius",
+                    "value": 493.2056579589844
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[20881027887786]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": 7.647351264953613
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 0.1483963131904602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": -0.3506784439086914
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Rotate/2",
+                    "value": 90.0
+                }
+            ]
+        },
+        "Instance_[1244437410474]": {
+            "Source": "Assets/Warehouse/CeilingLamp.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[956674601642]/Components/AZ::Render::EditorAreaLightComponent/Controller/Configuration/AttenuationRadius",
+                    "value": 493.2056579589844
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[20881027887786]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": 3.121190309524536
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 0.1483963131904602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": -0.3506784439086914
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Rotate/2",
+                    "value": 90.0
+                }
+            ]
+        },
+        "Instance_[943789699754]": {
+            "Source": "Assets/Warehouse/CeilingLamp.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[956674601642]/Components/AZ::Render::EditorAreaLightComponent/Controller/Configuration/AttenuationRadius",
+                    "value": 493.2056579589844
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[20859553051306]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": -1.921454668045044
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 0.1483963131904602
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": -0.3506784439086914
+                }
+            ]
+        }
+    }
+}
