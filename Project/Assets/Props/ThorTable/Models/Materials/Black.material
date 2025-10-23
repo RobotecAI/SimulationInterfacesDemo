@@ -1,0 +1,29 @@
+{
+    "materialType": "@gemroot:Atom_Feature_Common@/Assets/Materials/Types/StandardPBR.materialtype",
+    "materialTypeVersion": 5,
+    "propertyValues": {
+        "baseColor.color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "emissive.color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "normal.factor": 0.20000000298023224,
+        "normal.flipX": true,
+        "normal.flipY": true,
+        "normal.textureMap": "Textures/metal_scratched_scratch_norm.jpg",
+        "occlusion.diffuseFactor": 0.05999999865889549,
+        "occlusion.diffuseTextureMap": "Textures/metal_scratched_diff.png",
+        "opacity.factor": 1.0,
+        "roughness.factor": 0.4000000059604645,
+        "roughness.lowerBound": 0.23000000417232513,
+        "roughness.textureMap": "Textures/metal_scratched_roughness.png",
+        "roughness.upperBound": 0.5099999904632568
+    }
+}

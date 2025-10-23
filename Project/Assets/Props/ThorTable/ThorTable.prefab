@@ -1,0 +1,374 @@
+{
+    "ContainerEntity": {
+        "Id": "ContainerEntity",
+        "Name": "ThorTable",
+        "Components": {
+            "EditorDisabledCompositionComponent": {
+                "$type": "EditorDisabledCompositionComponent",
+                "Id": 5282627382670840121
+            },
+            "EditorEntityIconComponent": {
+                "$type": "EditorEntityIconComponent",
+                "Id": 1428060215688786737
+            },
+            "EditorEntitySortComponent": {
+                "$type": "EditorEntitySortComponent",
+                "Id": 10898300414907692716,
+                "Child Entity Order": [
+                    "Entity_[845677948310]"
+                ]
+            },
+            "EditorInspectorComponent": {
+                "$type": "EditorInspectorComponent",
+                "Id": 12186040859531336245
+            },
+            "EditorLockComponent": {
+                "$type": "EditorLockComponent",
+                "Id": 8908793547821645553
+            },
+            "EditorOnlyEntityComponent": {
+                "$type": "EditorOnlyEntityComponent",
+                "Id": 5206156244258690636
+            },
+            "EditorPendingCompositionComponent": {
+                "$type": "EditorPendingCompositionComponent",
+                "Id": 3590107348524049884
+            },
+            "EditorPrefabComponent": {
+                "$type": "EditorPrefabComponent",
+                "Id": 14047211958265595403
+            },
+            "EditorVisibilityComponent": {
+                "$type": "EditorVisibilityComponent",
+                "Id": 6764795010994143288
+            },
+            "TransformComponent": {
+                "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                "Id": 15104668460359383155,
+                "Parent Entity": ""
+            }
+        }
+    },
+    "Entities": {
+        "Entity_[563599213020]": {
+            "Id": "Entity_[563599213020]",
+            "Name": "ThorTable.USD",
+            "Components": {
+                "AZ::Render::EditorMeshComponent": {
+                    "$type": "AZ::Render::EditorMeshComponent",
+                    "Id": 4089801206471416830,
+                    "Controller": {
+                        "Configuration": {
+                            "ModelAsset": {
+                                "assetId": {
+                                    "guid": "{C98B89C9-DEC5-54B5-8702-2E5DF2D88BA5}",
+                                    "subId": 274191844
+                                },
+                                "assetHint": "assets/props/thortable/models/thortable.fbx.azmodel"
+                            }
+                        }
+                    }
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 14781830880010467373
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 17116594232847632447
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 4077230118936711019
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 12311605113958466518,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 14783297376175805445
+                        },
+                        {
+                            "ComponentId": 15397775378344561371,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 12311605113958466518,
+                            "SortIndex": 2
+                        },
+                        {
+                            "ComponentId": 4077230118936711019,
+                            "SortIndex": 3
+                        },
+                        {
+                            "ComponentId": 13912263883849841910,
+                            "SortIndex": 4
+                        },
+                        {
+                            "ComponentId": 10911202291623225163,
+                            "SortIndex": 5
+                        },
+                        {
+                            "ComponentId": 3924516506979439423,
+                            "SortIndex": 6
+                        },
+                        {
+                            "ComponentId": 17116594232847632447,
+                            "SortIndex": 7
+                        },
+                        {
+                            "ComponentId": 14781830880010467373,
+                            "SortIndex": 8
+                        },
+                        {
+                            "ComponentId": 18161639357669643113,
+                            "SortIndex": 9
+                        },
+                        {
+                            "ComponentId": 4089801206471416830,
+                            "SortIndex": 10
+                        },
+                        {
+                            "ComponentId": 15255438507451280422,
+                            "SortIndex": 11
+                        },
+                        {
+                            "ComponentId": 3662466327307989714,
+                            "SortIndex": 12
+                        },
+                        {
+                            "ComponentId": 822083344088753634,
+                            "SortIndex": 13
+                        }
+                    ]
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 10911202291623225163
+                },
+                "EditorMaterialComponent": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 15255438507451280422,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": [
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 553678913
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{D54D2C2F-1A3E-522D-BC25-586DFCF4CCDA}"
+                                            },
+                                            "assetHint": "assets/props/thortable/models/materials/rubber_smooth.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 1662216163
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{20A0949C-6121-55D6-8A1E-3F6E89358CA8}"
+                                            },
+                                            "assetHint": "assets/props/thortable/models/materials/white.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 2855961545
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{41287EFD-FA8E-56C8-8044-D50CC52B64E7}"
+                                            },
+                                            "assetHint": "assets/props/thortable/models/materials/stainless_steel_glossy.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 2917045605
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{4F364C74-EFBA-5D28-B708-EB3DE44FF345}"
+                                            },
+                                            "assetHint": "assets/props/thortable/models/materials/black.azmaterial"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 4259212940
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{941E1014-6D7A-50D1-8646-1A028817F485}"
+                                            },
+                                            "assetHint": "assets/props/thortable/models/materials/aluminum_brushed.azmaterial"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 15397775378344561371
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 3924516506979439423
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 13912263883849841910
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 14783297376175805445,
+                    "Parent Entity": "Entity_[845677948310]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0,
+                            0.0,
+                            -1.190000057220459
+                        ]
+                    }
+                }
+            }
+        },
+        "Entity_[845677948310]": {
+            "Id": "Entity_[845677948310]",
+            "Name": "ThorTable",
+            "Components": {
+                "EditorColliderComponent": {
+                    "$type": "EditorColliderComponent",
+                    "Id": 7630713688737210553,
+                    "ColliderConfiguration": {
+                        "Position": [
+                            0.01380079984664917,
+                            -0.00037170000723563135,
+                            -0.6089370846748352
+                        ],
+                        "MaterialSlots": {
+                            "Slots": [
+                                {
+                                    "Name": "Entire object"
+                                }
+                            ]
+                        }
+                    },
+                    "ShapeConfiguration": {
+                        "ShapeType": 1,
+                        "Box": {
+                            "Configuration": [
+                                1.7957874536514282,
+                                1.4915492534637451,
+                                1.17267644405365
+                            ]
+                        }
+                    }
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 108631022907224506
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 5804705619640534634
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 5696163628552641165,
+                    "Child Entity Order": [
+                        "Entity_[563599213020]"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 8722842830202709788,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 10648405732495655130
+                        },
+                        {
+                            "ComponentId": 15936567027184494451,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 8722842830202709788,
+                            "SortIndex": 2
+                        },
+                        {
+                            "ComponentId": 5696163628552641165,
+                            "SortIndex": 3
+                        },
+                        {
+                            "ComponentId": 13761145888337061705,
+                            "SortIndex": 4
+                        },
+                        {
+                            "ComponentId": 8134598322956563240,
+                            "SortIndex": 5
+                        },
+                        {
+                            "ComponentId": 6042262797750547694,
+                            "SortIndex": 6
+                        },
+                        {
+                            "ComponentId": 5804705619640534634,
+                            "SortIndex": 7
+                        },
+                        {
+                            "ComponentId": 108631022907224506,
+                            "SortIndex": 8
+                        },
+                        {
+                            "ComponentId": 16599783477072852267,
+                            "SortIndex": 9
+                        },
+                        {
+                            "ComponentId": 7630713688737210553,
+                            "SortIndex": 10
+                        }
+                    ]
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 8134598322956563240
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 15936567027184494451
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 6042262797750547694
+                },
+                "EditorStaticRigidBodyComponent": {
+                    "$type": "EditorStaticRigidBodyComponent",
+                    "Id": 16599783477072852267
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 13761145888337061705
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 10648405732495655130,
+                    "Parent Entity": "ContainerEntity"
+                }
+            }
+        }
+    }
+}

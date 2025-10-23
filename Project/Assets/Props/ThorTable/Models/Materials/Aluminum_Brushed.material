@@ -1,0 +1,19 @@
+{
+    "materialType": "@gemroot:Atom_Feature_Common@/Assets/Materials/Types/StandardPBR.materialtype",
+    "materialTypeVersion": 5,
+    "propertyValues": {
+        "emissive.color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "metallic.factor": 0.7599999904632568,
+        "normal.factor": 0.019999999552965164,
+        "normal.textureMap": "Textures/brushed_metal_linear_norm.jpg",
+        "opacity.factor": 1.0,
+        "roughness.factor": 0.4000000059604645,
+        "roughness.textureMap": "Textures/brushed_metal_linear_roughness.png",
+        "roughness.upperBound": 0.4699999988079071
+    }
+}
