@@ -2,12 +2,12 @@
 #include <AzCore/Memory/SystemAllocator.h>
 #include <AzCore/Module/Module.h>
 
+#include "SampleComponent.h"
 #include "SimulationInterfacesDemoSystemComponent.h"
 
 namespace SimulationInterfacesDemo
 {
-    class SimulationInterfacesDemoModule
-        : public AZ::Module
+    class SimulationInterfacesDemoModule : public AZ::Module
     {
     public:
         AZ_RTTI(SimulationInterfacesDemoModule, "{7FF968EA-F342-4BF4-951F-FDF53B6A17A9}", AZ::Module);
@@ -17,9 +17,12 @@ namespace SimulationInterfacesDemo
             : AZ::Module()
         {
             // Push results of [MyComponent]::CreateDescriptor() into m_descriptors here.
-            m_descriptors.insert(m_descriptors.end(), {
-                SimulationInterfacesDemoSystemComponent::CreateDescriptor(),
-            });
+            m_descriptors.insert(
+                m_descriptors.end(),
+                {
+                    SimulationInterfacesDemoSystemComponent::CreateDescriptor(),
+                    SampleComponent::CreateDescriptor(),
+                });
         }
 
         /**
@@ -32,6 +35,6 @@ namespace SimulationInterfacesDemo
             };
         }
     };
-}// namespace SimulationInterfacesDemo
+} // namespace SimulationInterfacesDemo
 
 AZ_DECLARE_MODULE_CLASS(Gem_SimulationInterfacesDemo, SimulationInterfacesDemo::SimulationInterfacesDemoModule)

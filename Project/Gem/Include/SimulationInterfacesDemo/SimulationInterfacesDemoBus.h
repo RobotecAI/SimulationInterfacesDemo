@@ -14,8 +14,7 @@ namespace SimulationInterfacesDemo
         // Put your public methods here
     };
 
-    class SimulationInterfacesDemoBusTraits
-        : public AZ::EBusTraits
+    class SimulationInterfacesDemoBusTraits : public AZ::EBusTraits
     {
     public:
         //////////////////////////////////////////////////////////////////////////

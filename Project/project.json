@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "project_id": "{BA9FC530-651E-4B9B-9113-5E497CC0089B}",
     "origin": "Open 3D Engine Extras: SimulationInterfacesDemo",
-    "license": "What license SimulationInterfacesDemo uses goes here: i.e. https://opensource.org/licenses/Apache-2.0 Or https://opensource.org/licenses/MIT etc.",
+    "license": "Apache-2.0",
+    "license_url": "https://opensource.org/licenses/Apache-2.0",
     "display_name": "SimulationInterfacesDemo",
     "summary": "A short description of SimulationInterfacesDemo.",
     "canonical_tags": [
@@ -16,9 +17,12 @@
     "engine": "o3de-sdk",
     "external_subdirectories": [
         "../Gems/o3de-ur-robots-gem",
+        "../Gems/o3de-rgl-gem",
         "../Gems/o3de-extras/Gems/LevelGeoreferencing",
         "../Gems/o3de-extras/Gems/ROS2",
         "../Gems/o3de-extras/Gems/ROS2SampleRobots",
+        "../Gems/o3de-extras/Gems/SimulationInterfaces",
+        "../Gems/o3de-extras/Gems/WarehouseAssets",
         "Gem"
     ],
     "restricted": "SimulationInterfacesDemo",
@@ -33,14 +37,17 @@
         "LyShine",
         "PrefabBuilder",
         "PrimitiveAssets",
-        "ROS2==3.3.1",
+        "RGL",
+        "ROS2",
         "ROS2SampleRobots",
         "ScriptCanvasPhysics",
         "ScriptEvents",
         "SimulationInterfacesDemo",
         "StartingPointInput",
         "TextureAtlas",
-        "URRobots"
+        "SimulationInterfaces",
+        "URRobots",
+        "WarehouseAssets"
     ],
     "engine_version": "2.4.1"
 }

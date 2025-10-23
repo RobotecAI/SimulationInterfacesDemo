@@ -1,7 +1,7 @@
 
-#include <AzCore/Serialization/SerializeContext.h>
 #include <AzCore/Serialization/EditContext.h>
 #include <AzCore/Serialization/EditContextConstants.inl>
+#include <AzCore/Serialization/SerializeContext.h>
 
 #include "SimulationInterfacesDemoSystemComponent.h"
 
@@ -11,17 +11,15 @@ namespace SimulationInterfacesDemo
     {
         if (AZ::SerializeContext* serialize = azrtti_cast<AZ::SerializeContext*>(context))
         {
-            serialize->Class<SimulationInterfacesDemoSystemComponent, AZ::Component>()
-                ->Version(0)
-                ;
+            serialize->Class<SimulationInterfacesDemoSystemComponent, AZ::Component>()->Version(0);
 
             if (AZ::EditContext* ec = serialize->GetEditContext())
             {
-                ec->Class<SimulationInterfacesDemoSystemComponent>("SimulationInterfacesDemo", "[Description of functionality provided by this System Component]")
+                ec->Class<SimulationInterfacesDemoSystemComponent>(
+                      "SimulationInterfacesDemo", "[Description of functionality provided by this System Component]")
                     ->ClassElement(AZ::Edit::ClassElements::EditorData, "")
-                        ->Attribute(AZ::Edit::Attributes::AppearsInAddComponentMenu, AZ_CRC("System"))
-                        ->Attribute(AZ::Edit::Attributes::AutoExpand, true)
-                    ;
+                    ->Attribute(AZ::Edit::Attributes::AppearsInAddComponentMenu, AZ_CRC("System"))
+                    ->Attribute(AZ::Edit::Attributes::AutoExpand, true);
             }
         }
     }
@@ -36,11 +34,13 @@ namespace SimulationInterfacesDemo
         incompatible.push_back(AZ_CRC("SimulationInterfacesDemoService"));
     }
 
-    void SimulationInterfacesDemoSystemComponent::GetRequiredServices([[maybe_unused]] AZ::ComponentDescriptor::DependencyArrayType& required)
+    void SimulationInterfacesDemoSystemComponent::GetRequiredServices(
+        [[maybe_unused]] AZ::ComponentDescriptor::DependencyArrayType& required)
     {
     }
 
-    void SimulationInterfacesDemoSystemComponent::GetDependentServices([[maybe_unused]] AZ::ComponentDescriptor::DependencyArrayType& dependent)
+    void SimulationInterfacesDemoSystemComponent::GetDependentServices(
+        [[maybe_unused]] AZ::ComponentDescriptor::DependencyArrayType& dependent)
     {
     }
 
@@ -73,4 +73,4 @@ namespace SimulationInterfacesDemo
     {
         SimulationInterfacesDemoRequestBus::Handler::BusDisconnect();
     }
-}
+} // namespace SimulationInterfacesDemo
