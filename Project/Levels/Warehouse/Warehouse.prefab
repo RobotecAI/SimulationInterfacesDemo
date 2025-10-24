@@ -19,8 +19,8 @@
                 "$type": "EditorEntitySortComponent",
                 "Id": 14126657869720434043,
                 "Child Entity Order": [
-                    "Instance_[20850963116714]/ContainerEntity",
-                    "Instance_[23049986372266]/ContainerEntity"
+                    "Entity_[1327209112177]",
+                    "Entity_[1322914144881]"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -55,6 +55,100 @@
             }
         }
     },
+    "Entities": {
+        "Entity_[1322914144881]": {
+            "Id": "Entity_[1322914144881]",
+            "Name": "Warehouse",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 4733656646856814843
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 17788762912881750749
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 14247323469604829645,
+                    "Child Entity Order": [
+                        "Instance_[20850963116714]/ContainerEntity"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 2674841044906190846
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 3307271362789697192
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 16773128595337807749
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 8310982116434842335
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 4792499158949863913
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 5493723324589330782,
+                    "Parent Entity": "Entity_[1146574390643]"
+                }
+            }
+        },
+        "Entity_[1327209112177]": {
+            "Id": "Entity_[1327209112177]",
+            "Name": "Environment",
+            "Components": {
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 14291457841897346925
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 13167877183443780883
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 11404321142350665490,
+                    "Child Entity Order": [
+                        "Instance_[23049986372266]/ContainerEntity"
+                    ]
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 1185822872590896616
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 18340345525202960033
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 14437087122844134520
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 14204092995316268474
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 9883531476736766152
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 568555753277434394,
+                    "Parent Entity": "Entity_[1146574390643]"
+                }
+            }
+        }
+    },
     "Instances": {
         "Instance_[20850963116714]": {
             "Source": "Assets/Warehouse/Warehouse.prefab",
@@ -62,7 +156,7 @@
                 {
                     "op": "replace",
                     "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
-                    "value": "../Entity_[1146574390643]"
+                    "value": "../Entity_[1322914144881]"
                 }
             ]
         },
@@ -72,7 +166,7 @@
                 {
                     "op": "replace",
                     "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
-                    "value": "../Entity_[1146574390643]"
+                    "value": "../Entity_[1327209112177]"
                 }
             ]
         }
