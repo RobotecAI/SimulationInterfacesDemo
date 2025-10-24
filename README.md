@@ -40,7 +40,7 @@ The O3DE project was generated using the `Ros2RoboticManipulationTemplate` templ
 
 ### Importing assets
 
-The Warehouse scene from [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/assets/usd_assets_environments.html#warehouse) was delivered to us in GLB format by NVidia. The following steps were taken to import the scene into O3DE:
+The project started with a Warehouse scene from [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/assets/usd_assets_environments.html#warehouse) already in GLB format. The following steps were taken to import the scene into O3DE:
 1. The GLB files were converted to GLTF format using `gltf-pipeline` tool (O3DE does not support GLB textures import natively).
 2. The GLTF files were imported into Blender for adjustments of materials.
 3. The adjusted GLTF files were imported into O3DE Editor and native O3DE material files were created manually.
