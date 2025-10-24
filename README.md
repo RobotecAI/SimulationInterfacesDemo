@@ -1,96 +1,58 @@
 # SimulationInterfacesDemo
 
-## Setup
+## About
 
-You may install this project using O3DE SDK or build O3DE from source. The instruction based on O3DE SDK installation was tested on Ubuntu 22.04 with ROS 2 Humble, and it requires Clang 12. If you wish to use different compiler version or different operating system, you need to build O3DE from source.
+This is an O3DE project to demonstrate the usage of [Simulation Interfaces](https://github.com/ros-simulation/simulation_interfaces), a common simulation standard developed by [Robotec AI](https://robotec.ai) and [Open Robotics](https://openrobotics.org) to enable interoperability between different robotic simulators. This project was used during the [ROSCon 2025](https://roscon.ros.org/2025/) talk **TODO: Add talk title and link**.
 
-### Installation Steps using O3DE SDK
+Additionally, the project contains two standard O3DE robotic templates: `Ros2ProjectTemplate` and `Ros2RoboticManipulationTemplate`, which can be used for other experiments.
 
-1. Install and initialize O3DE:
-```shell
-wget https://o3debinaries.org/main/Latest/Linux/o3de_2505_1.deb
-sudo dpkg -i o3de_2505_1.deb
-/opt/O3DE/25.05.1/python/get_python.sh
-/opt/O3DE/25.05.1/scripts/o3de.sh register --this-engine 
-```
+> **Note:** This project runs on Linux only, as O3DE ROS 2 integration is currently supported only on Linux.
 
-2. Set the environment variable pointing to this repository:
-```shell
-export PROJECT_PATH="/path/to/SimulationInterfacesDemo"
-```
+<img src="docs/project.png" alt="Project overview" width="50%">
 
-3. Initialize submodules:
-```shell
-cd $PROJECT_PATH
-git submodule update --init --recursive
-```
+## Repository Structure
 
-4. Build the project:
-```shell
-cd $PROJECT_PATH
-cmake -B build/linux -G "Ninja Multi-Config" -DLY_UNITY_BUILD=ON -DLY_STRIP_DEBUG_SYMBOLS=TRUE -DLY_DISABLE_TEST_MODULES=ON
-cmake --build build/linux --config profile
-```
+The repository is organized as follows:
+- `Examples`: contains sample ROS 2 scripts to interact with the simulation.
+- `Gems`: placeholder for O3DE Gems pulled as submodules.
+- `Project`: contains the O3DE project files.
+- `ros2_ws`: contains a ROS 2 workspace with some additional packages.
+- `Scripts`: placeholder for the script used during the ROSCon talk pulled as a submodule. **TODO: add submodule when ready**
 
-### Installation Steps building O3DE from source
+## Project Setup
 
-1. Set the environment variable pointing to this repository and to O3DE source code:
-```shell
-export PROJECT_PATH="/path/to/SimulationInterfacesDemo"
-export O3DE_PATH="/path/to/o3de"
-```
-
-2. Clone the O3DE repository, checkout the desired version and initialize O3DE:
-```shell
-git clone https://github.com/o3de/o3de.git $O3DE_PATH
-cd $O3DE_PATH
-git checkout 2505.1
-./python/get_python.sh
-./scripts/o3de.sh register --this-engine
-```
-
-3. Initialize submodules:
-```shell
-cd $PROJECT_PATH
-git submodule update --init --recursive
-```
-
-4. Build the project (you need to adjust the engine parameter in `project.json` file to switch from O3DE SDK to your O3DE source code):
-```shell
-cd $PROJECT_PATH
-sed -i 's/"engine": "o3de-sdk"/"engine": "o3de"/' project.json
-cmake -B build/linux -G "Ninja Multi-Config" -DLY_UNITY_BUILD=ON -DLY_STRIP_DEBUG_SYMBOLS=TRUE -DLY_DISABLE_TEST_MODULES=ON
-cmake --build build/linux --config profile
-```
-
-> **Note:** the build process may take a while, as it needs to compile O3DE engine and all the gems.
+Follow the instructions in [INSTALL.md](./docs/install.md) to set up and build the project.
 
 ## Run the project:
 
-You can start the project directly from the build folder:
-```shell
-cd $PROJECT_PATH/Project
-build/linux/bin/profile/SimulationInterfacesDemo.GameLauncher
-```
+You can find the instructions to run the project in different scenarios and configuration in [RUN.md](./docs/run.md).
 
-or from the O3DE Editor:
-```shell
-/opt/O3DE/25.05.1/bin/Linux/profile/Default/Editor --project-path ~/devroot/projects/SimulationInterfacesDemo/Project 
-```
+## Detailed Explanation of the repository components
 
-## Run the MoveIt demo:
+### O3DE Project Structure
 
-Build and source the `ros2_ws` workspace. Run the MoveIt launcher:
-```bash
-cd $PROJECT_PATH/ros2_ws
-colcon build
-source install/setup.bash
-ros2 launch ur_moveit_config ur_moveit.launch.py ur_type:=ur10 launch_rviz:=true use_fake_hardware:=true use_sim_time:=true
-```
+The O3DE project was generated using the `Ros2RoboticManipulationTemplate` template using O3DE 25.05.1. Next, the project was modified as follows:
+- The Warehouse level based on the [Isaac Sim assets](https://docs.isaacsim.omniverse.nvidia.com/latest/assets/usd_assets_environments.html#warehouse) (`warehouse_with_forklifts.usd`) was added as the main scene.
+- The Dingo D robot was imported from the [Dingo ROS 2 Description package](https://github.com/dingo-cpr/dingo).
+- The Lidar sensor was added to the Dingo D robot to make it usable in navigation scenarios; lights were added to the robot for better look.
+- The content of `Ros2ProjectTemplate` was merged into the project to add another demonstrator scene (3 scenes in total).
+- The UR10 robot was added to the simulation; the robot was modified to include a gripper from Panda Franka Emika robot.
 
-## ROS 2 Workspace
+### Importing assets
 
-The workspace is build based on existing resources with some modifications to add a gripper to the UR robot and to make it work with ROS2 Humble. In particular:
+The Warehouse scene from [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/assets/usd_assets_environments.html#warehouse) was delivered to us in GLB format by NVidia. The following steps were taken to import the scene into O3DE:
+1. The GLB files were converted to GLTF format using `gltf-pipeline` tool (O3DE does not support GLB textures import natively).
+2. The GLTF files were imported into Blender for adjustments of materials.
+3. The adjusted GLTF files were imported into O3DE Editor and native O3DE material files were created manually.
+4. (optional) The colliders were added manually in O3DE Editor.
+5. (optional) Additional entity to fix the pivot point position (located outside the objects in the original files) was added.
+6. The scene/objects was saved in O3DE native format.
+
+The Dingo D assets can be directly imported into O3DE from the URDF files using the O3DE ROS 2 Robot Importer tool. The only modification made to the original files was the addition of native O3DE materials to improve the appearance of the robot. The visual quality of the imported robot is not as good as the Warehouse scene, as the original assets are low-poly and do not contain high-quality textures.
+
+### ROS 2 Workspace
+
+The workspace is build based on existing resources with some modifications to add a gripper to the UR robot and to make Dingo package work with ROS2 Humble. In particular:
 1. [Universal_Robots_ROS2_Description](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description) fork used in [ROSCon2023Demo](https://github.com/RobotecAI/ROSCon2023Demo) repository was used as a base (commit `8569a675`). The following modifications were made to add the gripper:
     - The gripper [assets](./ros2_ws/src/Universal_Robots_ROS2_Description/urdf/finger_gripper) were added.
     - The [urdf/ur_macro.xacro](./ros2_ws/src/Universal_Robots_ROS2_Description/urdf/ur_macro.xacro) file was modified adding the gripper.
@@ -101,6 +63,6 @@ The workspace is build based on existing resources with some modifications to ad
 3. [Dingo](https://github.com/dingo-cpr/dingo) repository was used as a base (commit `68806fd`) for the Dingo robot. The following modifications were made to make the robot usable without gazebo in ROS 2 Humble:
     - All packages except `dingo_description` were removed.
     - The `dingo_description` package was modified to remove all references to gazebo and accessories. The files modified are [urdf/dingo-d.urdf.xacro](./ros2_ws/src/dingo/dingo_description/urdf/dingo-d.urdf.xacro) and [urdf/dingo-o.urdf.xacro](./ros2_ws/src/dingo/dingo_description/urdf/dingo-o.urdf.xacro).
-    - The `dingo_description` package was modified to work with ROS2 Humble
+    - The `dingo_description` package was modified to work with ROS 2 Humble
 
 > **Note:** the `dingo_description` package was used to import the robot into O3DE, and it was stored in the native format after the import was completed. The package is not needed anymore. It is a part of the workspace to allow tracking of changes made to the original files.

@@ -2,8 +2,8 @@
     "gem_name": "SimulationInterfacesDemo",
     "version": "1.0.0",
     "display_name": "SimulationInterfacesDemo",
-    "license": "What license SimulationInterfacesDemo uses goes here: i.e. Apache-2.0 or MIT",
-    "license_url": "Link to the license web site goes here: i.e. https://opensource.org/licenses/Apache-2.0 Or https://opensource.org/licenses/MIT",
+    "license": "Apache-2.0",
+    "license_url": "https://opensource.org/licenses/Apache-2.0",
     "origin": "The name of the originator goes here. i.e. XYZ Inc.",
     "origin_url": "The primary repo for SimulationInterfacesDemo goes here: i.e. http://www.mydomain.com",
     "type": "",
@@ -23,8 +23,6 @@
     "dependencies": [
         "ROS2>=3.1.0"
     ],
-    "compatible_engines": [
-    ],
-    "engine_api_dependencies":[
-    ]
+    "compatible_engines": [],
+    "engine_api_dependencies": []
 }

@@ -2076,18 +2076,6 @@
                     },
                     "Initial positions": [
                         [
-                            "base_joint",
-                            {}
-                        ],
-                        [
-                            "base_link-base_fixed_joint",
-                            {}
-                        ],
-                        [
-                            "base_link-base_link_inertia",
-                            {}
-                        ],
-                        [
                             "shoulder_pan_joint",
                             {}
                         ],
@@ -2112,19 +2100,7 @@
                             -0.10999999940395355
                         ],
                         [
-                            "wrist_3-flange",
-                            {}
-                        ],
-                        [
-                            "flange-tool0",
-                            {}
-                        ],
-                        [
                             "panda_hand_joint",
-                            {}
-                        ],
-                        [
-                            "wrist_3_link-ft_frame",
                             {}
                         ],
                         [

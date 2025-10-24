@@ -1,0 +1,99 @@
+{
+    "values": [
+        {
+            "$type": "{5B03C8E6-8CEE-4DA0-A7FA-CD88689DD45B} MeshGroup",
+            "id": "{E2342769-10C0-5733-86BC-FC55B273C2E1}",
+            "name": "ThorTable",
+            "NodeSelectionList": {
+                "selectedNodes": [
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001"
+                ],
+                "unselectedNodes": [
+                    "RootNode",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001.Aluminum_Brushed",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001.Black",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001.Rubber_Smooth",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001.Stainless_Steel_Glossy",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001.UV0",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001.White",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001.custom_properties",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001.transform"
+                ]
+            },
+            "export method": 2,
+            "DecomposeMeshes": true,
+            "ConvexDecompositionParams": {
+                "MaxConvexHulls": 50,
+                "MaxNumVerticesPerConvexHull": 10
+            },
+            "PhysicsMaterialSlots": {
+                "Slots": [
+                    {
+                        "Name": "Black"
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "{07B356B7-3635-40B5-878A-FAC4EFD5AD86} MeshGroup",
+            "name": "ThorTable",
+            "nodeSelectionList": {
+                "selectedNodes": [
+                    "RootNode",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001.Aluminum_Brushed",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001.Black",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001.Rubber_Smooth",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001.Stainless_Steel_Glossy",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001.UV0",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001.White",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001.custom_properties",
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001.transform"
+                ]
+            },
+            "rules": {
+                "rules": [
+                    {
+                        "$type": "MaterialRule"
+                    }
+                ]
+            },
+            "id": "{2F414841-9A01-5155-8FB9-BB0B3533B0D5}"
+        },
+        {
+            "$type": "{41DCBEAB-203C-4A05-96FA-98E1D8A96FA1} ImportGroup"
+        },
+        {
+            "$type": "{07B356B7-3635-40B5-878A-FAC4EFD5AD86} MeshGroup",
+            "name": "default_ThorTable_171A3314_CFD2_538B_9C26_9C98AA2676B7_",
+            "nodeSelectionList": {
+                "selectedNodes": [
+                    "RootNode._07332_11_Top_Skin_750_x_900_x_6mm_001"
+                ]
+            },
+            "rules": {
+                "rules": [
+                    {
+                        "$type": "ProceduralMeshGroupRule"
+                    },
+                    {
+                        "$type": "UnmodifiableRule"
+                    },
+                    {
+                        "$type": "CoordinateSystemRule",
+                        "useAdvancedData": true
+                    },
+                    {
+                        "$type": "{6E796AC8-1484-4909-860A-6D3F22A7346F} LodRule"
+                    }
+                ]
+            },
+            "id": "{171A3314-CFD2-538B-9C26-9C98AA2676B7}"
+        },
+        {
+            "$type": "PrefabGroup",
+            "name": "Assets/Props/ThorTable/Models/ThorTable_fbx.procprefab",
+            "id": "{3FDE172B-E156-5F7E-81BD-DB646E279205}"
+        }
+    ]
+}

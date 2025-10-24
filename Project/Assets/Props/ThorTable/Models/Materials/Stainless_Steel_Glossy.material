@@ -1,0 +1,19 @@
+{
+    "materialType": "@gemroot:Atom_Feature_Common@/Assets/Materials/Types/StandardPBR.materialtype",
+    "materialTypeVersion": 5,
+    "propertyValues": {
+        "emissive.color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "metallic.factor": 0.33000001311302185,
+        "normal.textureMap": "Textures/stainless_damages_norm.jpg",
+        "occlusion.diffuseTextureMap": "Textures/stainless_multi_diff.png",
+        "opacity.factor": 1.0,
+        "roughness.factor": 0.4000000059604645,
+        "roughness.textureMap": "Textures/stainless_multi_rough.jpg",
+        "roughness.upperBound": 0.4699999988079071
+    }
+}

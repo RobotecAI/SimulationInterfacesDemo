@@ -37,4 +37,4 @@ namespace SimulationInterfacesDemo
         void Deactivate() override;
         ////////////////////////////////////////////////////////////////////////
     };
-}
+} // namespace SimulationInterfacesDemo

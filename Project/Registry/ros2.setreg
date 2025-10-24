@@ -16,5 +16,16 @@
                 "AllowPipelineModification": true
             }
         }
+    },
+    "SimulationInterfaces": {
+        "SimulatorFrame": "world",
+        "PrintStateNameInGui": false,
+        "StartInStoppedState": true,
+        "KeyboardTransitions":
+        {
+            "StoppedToPlaying": "keyboard_key_alphanumeric_R",
+            "PausedToPlaying": "keyboard_key_alphanumeric_R",
+            "PlayingToPaused": "keyboard_key_alphanumeric_P"
+        }
     }
 }

@@ -5,7 +5,9 @@
 [Ii]nstall*/
 [Ll]og*/
 _savebackup/
-CMakeUserPresets.json
+__pycache__/
+*.pyc
+CMakePresets.json
 cmake-*
 .idea
 .vscode

@@ -5,4 +5,6 @@ set(FILES
     Include/SimulationInterfacesDemo/SimulationInterfacesDemoBus.h
     Source/SimulationInterfacesDemoSystemComponent.cpp
     Source/SimulationInterfacesDemoSystemComponent.h
+    Source/SampleComponent.cpp
+    Source/SampleComponent.h
 )

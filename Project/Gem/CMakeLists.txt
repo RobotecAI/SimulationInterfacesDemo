@@ -57,10 +57,16 @@ ly_add_target(
         PUBLIC
             Include
     BUILD_DEPENDENCIES
+        PUBLIC
+            Gem::ImGui.Static
+            Gem::ROS2.Static
         PRIVATE
             AZ::AzGameFramework
             Gem::Atom_AtomBridge.Static
 )
+
+# Request ROS2 packages to be included 
+target_depends_on_ros2_packages(${gem_name}.Private.Object geometry_msgs)
 
 ly_add_target(
     NAME ${gem_name} ${PAL_TRAIT_MONOLITHIC_DRIVEN_MODULE_TYPE}
