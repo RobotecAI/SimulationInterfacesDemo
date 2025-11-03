@@ -2,7 +2,7 @@
 
 ## About
 
-This is an O3DE project to demonstrate the usage of [Simulation Interfaces](https://github.com/ros-simulation/simulation_interfaces), a common simulation standard developed by [Robotec AI](https://robotec.ai) and [Open Robotics](https://openrobotics.org) to enable interoperability between different robotic simulators. This project was used during the [ROSCon 2025](https://roscon.ros.org/2025/) talk **TODO: Add talk title and link**.
+This is an O3DE project to demonstrate the usage of [Simulation Interfaces](https://github.com/ros-simulation/simulation_interfaces), a common simulation standard developed by [Robotec AI](https://robotec.ai) and [Open Robotics](https://openrobotics.org) to enable interoperability between different robotic simulators. This project was used during the [ROSCon 2025](https://roscon.ros.org/2025/) talk.
 
 Additionally, the project contains two standard O3DE robotic templates: `Ros2ProjectTemplate` and `Ros2RoboticManipulationTemplate`, which can be used for other experiments.
 
@@ -17,7 +17,7 @@ The repository is organized as follows:
 - `Gems`: placeholder for O3DE Gems pulled as submodules.
 - `Project`: contains the O3DE project files.
 - `ros2_ws`: contains a ROS 2 workspace with some additional packages.
-- `Scripts`: placeholder for the script used during the ROSCon talk pulled as a submodule. **TODO: add submodule when ready**
+- `Scripts`: placeholder for the script used during the ROSCon talk pulled as a submodule.
 
 ## Project Setup
 
