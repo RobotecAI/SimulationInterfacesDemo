@@ -8,3 +8,7 @@
 	path = Gems/o3de-rgl-gem
 	url = https://github.com/RobotecAI/o3de-rgl-gem.git
 	branch = main
+[submodule "Scripts"]
+	path = Scripts
+	url = git@github.com:ros-simulation/simulation_interfaces_examples.git
+	branch = main
