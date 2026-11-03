@@ -1,136 +1,176 @@
-The O3DE project in this repository is created by Robotec.ai sp. z o.o. and it is covered under the Apache 2.0 License terms in the attached LICENSE_APACHE2.TXT file.
-The Assets imported from Isaac Sim are kindly shared by NVIDIA and are subject to the Creative Commons Attribution 4.0 International (CC BY 4.0) License as detailed in LICENSE_CC_BY_4_0.TXT document.
+SimulationInterfacesDemo
+Copyright 2025-2026 Robotec.ai sp. z o.o.
 
-The full list of files licensed under Creative Commons Attribution 4.0 International (CC BY 4.0) License:
-- Project/Assets/Warehouse/AisleSign_Text_01.jpg
-- Project/Assets/Warehouse/FOF_Map_Labels_D.jpg
-- Project/Assets/Warehouse/FOF_Map_Magenta_Box_D.jpg
-- Project/Assets/Warehouse/simple_warehouse.bin
-- Project/Assets/Warehouse/simple_warehouse.gltf
-- Project/Assets/Warehouse/T_BarelPlasticA_AO.jpg
-- Project/Assets/Warehouse/T_BarelPlasticA_D.jpg
-- Project/Assets/Warehouse/T_BarelPlasticA_Metallic.jpg
-- Project/Assets/Warehouse/T_BarelPlasticA_N.jpg
-- Project/Assets/Warehouse/T_BarelPlasticA_ORM.jpg
-- Project/Assets/Warehouse/T_BarelPlasticA_Roughness.jpg
-- Project/Assets/Warehouse/T_BeamsA_D.jpg
-- Project/Assets/Warehouse/T_CardBoxA_AO.jpg
-- Project/Assets/Warehouse/T_CardBoxA_D.jpg
-- Project/Assets/Warehouse/T_CardBoxA_Metallic.jpg
-- Project/Assets/Warehouse/T_CardBoxA_N.jpg
-- Project/Assets/Warehouse/T_CardBoxA_ORM.jpg
-- Project/Assets/Warehouse/T_CardBoxA_Roughness.jpg
-- Project/Assets/Warehouse/T_CardBoxC_AO.jpg
-- Project/Assets/Warehouse/T_CardBoxC_D.jpg
-- Project/Assets/Warehouse/T_CardBoxC_Metallic.jpg
-- Project/Assets/Warehouse/T_CardBoxC_N.jpg
-- Project/Assets/Warehouse/T_CardBoxC_ORM.jpg
-- Project/Assets/Warehouse/T_CardBoxC_Roughness.jpg
-- Project/Assets/Warehouse/T_CardBoxD_AO.jpg
-- Project/Assets/Warehouse/T_CardBoxD_D.jpg
-- Project/Assets/Warehouse/T_CardBoxD_Metallic.jpg
-- Project/Assets/Warehouse/T_CardBoxD_N.jpg
-- Project/Assets/Warehouse/T_CardBoxD_ORM.jpg
-- Project/Assets/Warehouse/T_CardBoxD_Roughness.jpg
-- Project/Assets/Warehouse/T_CeilingA_D.jpg
-- Project/Assets/Warehouse/T_CeilingA_N.jpg
-- Project/Assets/Warehouse/T_FireExtinguisher_AO.jpg
-- Project/Assets/Warehouse/T_FireExtinguisher_D.jpg
-- Project/Assets/Warehouse/T_FireExtinguisher_Metallic.jpg
-- Project/Assets/Warehouse/T_FireExtinguisher_N.jpg
-- Project/Assets/Warehouse/T_FireExtinguisher_ORM.jpg
-- Project/Assets/Warehouse/T_FireExtinguisher_Roughness.jpg
-- Project/Assets/Warehouse/T_Floor_01_AO.jpg
-- Project/Assets/Warehouse/T_Floor_01_D.jpg
-- Project/Assets/Warehouse/T_Floor_01_Metallic.jpg
-- Project/Assets/Warehouse/T_Floor_01_N.jpg
-- Project/Assets/Warehouse/T_Floor_01_ORM.jpg
-- Project/Assets/Warehouse/T_Floor_01_Roughness.jpg
-- Project/Assets/Warehouse/T_FloorStripes_AO.jpg
-- Project/Assets/Warehouse/T_FloorStripes_D.jpg
-- Project/Assets/Warehouse/T_FloorStripes_Metallic.jpg
-- Project/Assets/Warehouse/T_FloorStripes_N.jpg
-- Project/Assets/Warehouse/T_FloorStripes_ORM.jpg
-- Project/Assets/Warehouse/T_FloorStripes_Roughness.jpg
-- Project/Assets/Warehouse/T_Forklift_AO.jpg
-- Project/Assets/Warehouse/T_Forklift_D.jpg
-- Project/Assets/Warehouse/T_Forklift_Metallic.jpg
-- Project/Assets/Warehouse/T_Forklift_N.jpg
-- Project/Assets/Warehouse/T_Forklift_ORM.jpg
-- Project/Assets/Warehouse/T_Forklift_Roughness.jpg
-- Project/Assets/Warehouse/T_FrameA_AO.jpg
-- Project/Assets/Warehouse/T_FrameA_D.jpg
-- Project/Assets/Warehouse/T_FrameA_Metallic.jpg
-- Project/Assets/Warehouse/T_FrameA_N.jpg
-- Project/Assets/Warehouse/T_FrameA_ORM.jpg
-- Project/Assets/Warehouse/T_FrameA_Roughness.jpg
-- Project/Assets/Warehouse/T_LampCeilingA_AO.jpg
-- Project/Assets/Warehouse/T_LampCeilingA_D.jpg
-- Project/Assets/Warehouse/T_LampCeilingA_Metallic.jpg
-- Project/Assets/Warehouse/T_LampCeilingA_N.jpg
-- Project/Assets/Warehouse/T_LampCeilingA_ORM.jpg
-- Project/Assets/Warehouse/T_LampCeilingA_Roughness.jpg
-- Project/Assets/Warehouse/T_PaletteA_01_AO.jpg
-- Project/Assets/Warehouse/T_PaletteA_01_D.jpg
-- Project/Assets/Warehouse/T_PaletteA_01_Metallic.jpg
-- Project/Assets/Warehouse/T_PaletteA_01_ORM.jpg
-- Project/Assets/Warehouse/T_PaletteA_01_Roughness.jpg
-- Project/Assets/Warehouse/T_PushcartA_AO.jpg
-- Project/Assets/Warehouse/T_PushcartA_D.jpg
-- Project/Assets/Warehouse/T_PushcartA_Metallic.jpg
-- Project/Assets/Warehouse/T_PushcartA_N.jpg
-- Project/Assets/Warehouse/T_PushcartA_ORM.jpg
-- Project/Assets/Warehouse/T_PushcartA_Roughness.jpg
-- Project/Assets/Warehouse/T_RackSetA_01_AO.jpg
-- Project/Assets/Warehouse/T_RackSetA_01_D.jpg
-- Project/Assets/Warehouse/T_RackSetA_01_Metallic.jpg
-- Project/Assets/Warehouse/T_RackSetA_01_N.jpg
-- Project/Assets/Warehouse/T_RackSetA_01_ORM.jpg
-- Project/Assets/Warehouse/T_RackSetA_01_Roughness.jpg
-- Project/Assets/Warehouse/T_RackSetA_02_AO.jpg
-- Project/Assets/Warehouse/T_RackSetA_02_D.jpg
-- Project/Assets/Warehouse/T_RackSetA_02_Metallic.jpg
-- Project/Assets/Warehouse/T_RackSetA_02_N.jpg
-- Project/Assets/Warehouse/T_RackSetA_02_ORM.jpg
-- Project/Assets/Warehouse/T_RackSetA_02_Roughness.jpg
-- Project/Assets/Warehouse/T_RackSetA_03_AO.jpg
-- Project/Assets/Warehouse/T_RackSetA_03_D.jpg
-- Project/Assets/Warehouse/T_RackSetA_03_Metallic.jpg
-- Project/Assets/Warehouse/T_RackSetA_03_N.jpg
-- Project/Assets/Warehouse/T_RackSetA_03_ORM.jpg
-- Project/Assets/Warehouse/T_RackSetA_03_Roughness.jpg
-- Project/Assets/Warehouse/T_RackSetA_04_AO.jpg
-- Project/Assets/Warehouse/T_RackSetA_04_D.jpg
-- Project/Assets/Warehouse/T_RackSetA_04_Metallic.jpg
-- Project/Assets/Warehouse/T_RackSetA_04_N.jpg
-- Project/Assets/Warehouse/T_RackSetA_04_ORM.jpg
-- Project/Assets/Warehouse/T_RackSetA_04_Roughness.jpg
-- Project/Assets/Warehouse/T_RackShield_AO.jpg
-- Project/Assets/Warehouse/T_RackShield_D.jpg
-- Project/Assets/Warehouse/T_RackShield_Metallic.jpg
-- Project/Assets/Warehouse/T_RackShield_N.jpg
-- Project/Assets/Warehouse/T_RackShield_ORM.jpg
-- Project/Assets/Warehouse/T_RackShield_Roughness.jpg
-- Project/Assets/Warehouse/T_SignsA_D.jpg
-- Project/Assets/Warehouse/T_SignsB_D.jpg
-- Project/Assets/Warehouse/T_SignsC_D.jpg
-- Project/Assets/Warehouse/T_WallA_01_AO.jpg
-- Project/Assets/Warehouse/T_WallA_01_D.jpg
-- Project/Assets/Warehouse/T_WallA_01_Metallic.jpg
-- Project/Assets/Warehouse/T_WallA_01_N.jpg
-- Project/Assets/Warehouse/T_WallA_01_ORM.jpg
-- Project/Assets/Warehouse/T_WallA_01_Roughness.jpg
-- Project/Assets/Warehouse/T_WallA_02_AO.jpg
-- Project/Assets/Warehouse/T_WallA_02_D.jpg
-- Project/Assets/Warehouse/T_WallA_02_Metallic.jpg
-- Project/Assets/Warehouse/T_WallA_02_N.jpg
-- Project/Assets/Warehouse/T_WallA_02_ORM.jpg
-- Project/Assets/Warehouse/T_WallA_02_Roughness.jpg
-- Project/Assets/Warehouse/T_WallDetails_AO.jpg
-- Project/Assets/Warehouse/T_WallDetails_D.jpg
-- Project/Assets/Warehouse/T_WallDetails_Metallic.jpg
-- Project/Assets/Warehouse/T_WallDetails_N.jpg
-- Project/Assets/Warehouse/T_WallDetails_ORM.jpg
-- Project/Assets/Warehouse/T_WallDetails_Roughness.jpg
+This repository contains material under several licences:
 
-The remaining files are licensed under Apache 2.0. This includes the material and assetinfo files located in folder Project/Assets/Warehouse that are part of the O3DE project.
+1. Files authored by Robotec.ai sp. z o.o. are licensed under the Apache License, Version 2.0
+   (see LICENSE_APACHE2.TXT).
+
+2. NVIDIA warehouse assets (see LICENSE_CC_BY_4_0.TXT):
+
+   The warehouse assets are (c) NVIDIA Corporation and released by NVIDIA under the Creative
+   Commons Attribution 4.0 International (CC BY 4.0) License
+   (https://huggingface.co/datasets/nvidia/PhysicalAI-SimReady-Warehouse-01).
+   Robotec.ai converted them to glTF and adjusted their materials for O3DE.
+
+   The full list of files licensed under Creative Commons Attribution 4.0 International
+   (CC BY 4.0) License:
+   - Project/Assets/Warehouse/Models/AisleSign_Text_01.jpg
+   - Project/Assets/Warehouse/Models/FOF_Map_Labels_D.jpg
+   - Project/Assets/Warehouse/Models/FOF_Map_Magenta_Box_D.jpg
+   - Project/Assets/Warehouse/Models/simple_warehouse.bin
+   - Project/Assets/Warehouse/Models/simple_warehouse.gltf
+   - Project/Assets/Warehouse/Models/T_BarelPlasticA_AO.jpg
+   - Project/Assets/Warehouse/Models/T_BarelPlasticA_D.jpg
+   - Project/Assets/Warehouse/Models/T_BarelPlasticA_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_BarelPlasticA_N.jpg
+   - Project/Assets/Warehouse/Models/T_BarelPlasticA_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_BarelPlasticA_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_BeamsA_D.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxA_AO.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxA_D.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxA_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxA_N.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxA_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxA_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxC_AO.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxC_D.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxC_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxC_N.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxC_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxC_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxD_AO.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxD_D.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxD_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxD_N.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxD_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_CardBoxD_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_CeilingA_D.jpg
+   - Project/Assets/Warehouse/Models/T_CeilingA_N.jpg
+   - Project/Assets/Warehouse/Models/T_FireExtinguisher_AO.jpg
+   - Project/Assets/Warehouse/Models/T_FireExtinguisher_D.jpg
+   - Project/Assets/Warehouse/Models/T_FireExtinguisher_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_FireExtinguisher_N.jpg
+   - Project/Assets/Warehouse/Models/T_FireExtinguisher_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_FireExtinguisher_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_Floor_01_AO.jpg
+   - Project/Assets/Warehouse/Models/T_Floor_01_D.jpg
+   - Project/Assets/Warehouse/Models/T_Floor_01_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_Floor_01_N.jpg
+   - Project/Assets/Warehouse/Models/T_Floor_01_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_Floor_01_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_FloorStripes_AO.jpg
+   - Project/Assets/Warehouse/Models/T_FloorStripes_D.jpg
+   - Project/Assets/Warehouse/Models/T_FloorStripes_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_FloorStripes_N.jpg
+   - Project/Assets/Warehouse/Models/T_FloorStripes_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_FloorStripes_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_Forklift_AO.jpg
+   - Project/Assets/Warehouse/Models/T_Forklift_D.jpg
+   - Project/Assets/Warehouse/Models/T_Forklift_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_Forklift_N.jpg
+   - Project/Assets/Warehouse/Models/T_Forklift_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_Forklift_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_FrameA_AO.jpg
+   - Project/Assets/Warehouse/Models/T_FrameA_D.jpg
+   - Project/Assets/Warehouse/Models/T_FrameA_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_FrameA_N.jpg
+   - Project/Assets/Warehouse/Models/T_FrameA_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_FrameA_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_LampCeilingA_AO.jpg
+   - Project/Assets/Warehouse/Models/T_LampCeilingA_D.jpg
+   - Project/Assets/Warehouse/Models/T_LampCeilingA_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_LampCeilingA_N.jpg
+   - Project/Assets/Warehouse/Models/T_LampCeilingA_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_LampCeilingA_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_PaletteA_01_AO.jpg
+   - Project/Assets/Warehouse/Models/T_PaletteA_01_D.jpg
+   - Project/Assets/Warehouse/Models/T_PaletteA_01_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_PaletteA_01_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_PaletteA_01_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_PushcartA_AO.jpg
+   - Project/Assets/Warehouse/Models/T_PushcartA_D.jpg
+   - Project/Assets/Warehouse/Models/T_PushcartA_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_PushcartA_N.jpg
+   - Project/Assets/Warehouse/Models/T_PushcartA_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_PushcartA_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_01_AO.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_01_D.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_01_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_01_N.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_01_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_01_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_02_AO.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_02_D.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_02_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_02_N.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_02_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_02_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_03_AO.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_03_D.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_03_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_03_N.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_03_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_03_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_04_AO.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_04_D.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_04_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_04_N.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_04_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_RackSetA_04_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_RackShield_AO.jpg
+   - Project/Assets/Warehouse/Models/T_RackShield_D.jpg
+   - Project/Assets/Warehouse/Models/T_RackShield_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_RackShield_N.jpg
+   - Project/Assets/Warehouse/Models/T_RackShield_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_RackShield_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_SignsA_D.jpg
+   - Project/Assets/Warehouse/Models/T_SignsB_D.jpg
+   - Project/Assets/Warehouse/Models/T_SignsC_D.jpg
+   - Project/Assets/Warehouse/Models/T_WallA_01_AO.jpg
+   - Project/Assets/Warehouse/Models/T_WallA_01_D.jpg
+   - Project/Assets/Warehouse/Models/T_WallA_01_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_WallA_01_N.jpg
+   - Project/Assets/Warehouse/Models/T_WallA_01_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_WallA_01_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_WallA_02_AO.jpg
+   - Project/Assets/Warehouse/Models/T_WallA_02_D.jpg
+   - Project/Assets/Warehouse/Models/T_WallA_02_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_WallA_02_N.jpg
+   - Project/Assets/Warehouse/Models/T_WallA_02_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_WallA_02_Roughness.jpg
+   - Project/Assets/Warehouse/Models/T_WallDetails_AO.jpg
+   - Project/Assets/Warehouse/Models/T_WallDetails_D.jpg
+   - Project/Assets/Warehouse/Models/T_WallDetails_Metallic.jpg
+   - Project/Assets/Warehouse/Models/T_WallDetails_N.jpg
+   - Project/Assets/Warehouse/Models/T_WallDetails_ORM.jpg
+   - Project/Assets/Warehouse/Models/T_WallDetails_Roughness.jpg
+
+   The material and assetinfo files located in folder Project/Assets/Warehouse are part of the
+   O3DE project. They are not covered by the CC BY 4.0 licence and are licensed as described
+   in section 1.
+
+3. Content derived from the Open 3D Engine project templates (Ros2ProjectTemplate,
+   Ros2RoboticManipulationTemplate), Copyright (c) Contributors to the Open 3D Engine Project,
+   is licensed under Apache-2.0 OR MIT (individual files keep their own licence headers).
+   This applies to:
+   - Project/Assets/Room
+   - Project/Assets/Props
+   - Project/Assets/BoxToyPuzzle
+   - the build files in Project/Gem
+   - Examples (launch files, RViz and parameter configurations)
+
+4. The third-party ROS 2 packages in ros2_ws/src/Universal_Robots_ROS2_Description,
+   ros2_ws/src/Universal_Robots_ROS2_Driver and ros2_ws/src/dingo are licensed under the
+   LICENSE file in each package directory (BSD-3-Clause). This also applies to the
+   byte-identical copies of the Clearpath Dingo meshes in Project/Assets/Dingo/Models
+   (diff_chassis.dae, diff_chassis_collision.stl and wheel.stl), which are licensed under
+   ros2_ws/src/dingo/LICENSE (BSD-3-Clause).
+
+5. The mesh files in ros2_ws/src/Universal_Robots_ROS2_Description/meshes/ur20 are subject to
+   the Universal Robots Terms and Conditions for Use of Graphical Documentation (see the
+   LICENSE.txt file in that directory):
+   © 2023 Universal Robots A/S. Use hereof is subject to Universal Robots A/S’ Terms and Conditions for Use of Graphical Documentation.
+
+6. The git submodules in Gems/ (o3de-extras, o3de-ur-robots-gem, o3de-rgl-gem) are separate
+   repositories distributed under their own licences.

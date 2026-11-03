@@ -32,7 +32,7 @@ You can find the instructions to run the project in different scenarios and conf
 ### O3DE Project Structure
 
 The O3DE project was generated using the `Ros2RoboticManipulationTemplate` template using O3DE 25.05.1. Next, the project was modified as follows:
-- The Warehouse level based on the [Isaac Sim assets](https://docs.isaacsim.omniverse.nvidia.com/latest/assets/usd_assets_environments.html#warehouse) (`warehouse_with_forklifts.usd`) was added as the main scene.
+- The Warehouse level, based on NVIDIA's warehouse assets released under CC BY 4.0 ([NVIDIA PhysicalAI-SimReady-Warehouse-01](https://huggingface.co/datasets/nvidia/PhysicalAI-SimReady-Warehouse-01)), was added as the main scene.
 - The Dingo D robot was imported from the [Dingo ROS 2 Description package](https://github.com/dingo-cpr/dingo).
 - The Lidar sensor was added to the Dingo D robot to make it usable in navigation scenarios; lights were added to the robot for better look.
 - The content of `Ros2ProjectTemplate` was merged into the project to add another demonstrator scene (3 scenes in total).
@@ -40,7 +40,7 @@ The O3DE project was generated using the `Ros2RoboticManipulationTemplate` templ
 
 ### Importing assets
 
-The project started with a Warehouse scene from [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/assets/usd_assets_environments.html#warehouse) already in GLB format. The following steps were taken to import the scene into O3DE:
+The project started with NVIDIA's warehouse scene ([CC BY 4.0](https://huggingface.co/datasets/nvidia/PhysicalAI-SimReady-Warehouse-01)) in GLB format. The following steps were taken to import the scene into O3DE:
 1. The GLB files were converted to GLTF format using `gltf-pipeline` tool (O3DE does not support GLB textures import natively).
 2. The GLTF files were imported into Blender for adjustments of materials.
 3. The adjusted GLTF files were imported into O3DE Editor and native O3DE material files were created manually.
@@ -68,4 +68,4 @@ The workspace is build based on existing resources with some modifications to ad
 > **Note:** the `dingo_description` package was used to import the robot into O3DE, and it was stored in the native format after the import was completed. The package is not needed anymore. It is a part of the workspace to allow tracking of changes made to the original files.
 
 ## License
-The O3DE project in this repository is created by Robotec.ai sp. z o.o. and it is covered under the [Apache 2.0 License](./LICENSE_APACHE2.TXT) terms. The Assets imported from Isaac Sim are kindly shared by NVIDIA and are subject to the [Creative Commons Attribution 4.0 International (CC BY 4.0) License](./LICENSE_CC_BY_4_0.TXT). This excludes the files that were created during the import process and that are part of the O3DE project. The full list of files licensed based on each license text is available in the [LICENSE](./LICENSE.TXT) file.
+Licensing differs per part of the repository; see [LICENSE.TXT](./LICENSE.TXT). The licence texts are in [LICENSE_APACHE2.TXT](./LICENSE_APACHE2.TXT) and [LICENSE_CC_BY_4_0.TXT](./LICENSE_CC_BY_4_0.TXT); attribution notices are in [NOTICE](./NOTICE).
